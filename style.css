@@ -1,0 +1,506 @@
+:root {
+--background: #1f1f1f;
+--action-background: hsla(0,0%,100%,.05);
+--cover-background: #323232;
+--cover-filter: opacity(.16) invert(96%) sepia(3%) saturate(540%) hue-rotate(201deg) brightness(99%) contrast(94%);
+--sub0-color: #ffffffeb;
+--sub1-color: #fa586a;
+--sub2-color: #ffffffa3;
+--exclipt-filter: invert(1) opacity(.64);
+--play-background: #ffffff0d;
+--description-color: #ffffffa3;
+--more: #ffffffeb;
+--block-background: #232323;
+--block-hover: #a60012;
+--new: hsla(0,0%,100%,.64);
+--new-background: hsla(0,0%,100%,.06);
+--track: #ffffffeb;
+--artist: #ffffffa3;
+--comm-filter: invert(39%) sepia(96%) saturate(492%) hue-rotate(306deg) brightness(105%) contrast(96%);
+--ent-color: #ffffffeb;
+--ent-background: rgba(40,40,40,.7);
+--ent-shadows: inset 0 0 0 1px hsla(0,0%,100%,.1), 0 8px 40px rgba(0,0,0,.5);
+--sub3-color: #ffffffa3;
+--popa-background: #2b2b2b;
+}
+@media (prefers-color-scheme: light) {
+:root {
+--background: white;
+--action-background: rgba(0,0,0,.05);
+--cover-background: #ebebeb;
+--cover-filter: opacity(.18) invert(23%) sepia(11%) saturate(384%) hue-rotate(202deg) brightness(93%) contrast(93%);
+--sub0-color: #000000e0;
+--sub1-color: #d60017;
+--sub2-color: #0000008f;
+--exclipt-filter: opacity(.56);
+--play-background: #0000000d;
+--description-color: #0000008f;
+--more: #000000e0;
+--block-background: rgba(0,0,0,.015);
+--block-hover: #d60017;
+--new: rgba(0,0,0,.56);
+--new-background: rgba(0,0,0,.06);
+--track: #000000e0;
+--artist: #0000008f;
+--comm-filter: invert(11%) sepia(76%) saturate(6460%) hue-rotate(348deg) brightness(89%) contrast(109%);;
+--ent-color: #000000e0;
+--ent-background: rgba(246,246,246, .72);
+--ent-shadows: inset 0 0 0 1px rgba(0,0,0,.15), 0 8px 40px rgba(0,0,0,.25);
+--sub3-color: #0000008f;
+--popa-background: #f2f2f2;
+}
+}
+
+play, .rate, song, song::after, comm {-webkit-transition: .2s;-o-transition: .2s;transition: .2s;}
+body {
+    font-family: -apple-system,BlinkMacSystemFont,Apple Color Emoji,SF Pro,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-size: 13px;
+    margin: 0;
+    background-color: var(--background);
+    color: white;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    line-height: 1.23077;
+    position: relative;
+    width: 100%;
+}
+.box {
+	padding: 0 25px 0;
+}
+.box.head {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	padding-top: 20px;
+	padding-bottom: 32px;
+}
+.box.body > .rate:first-child {
+	margin-top: 16px;
+}
+.redbox input, .action::after, sub2::after, play::before, comm::after, f::before {
+    background-repeat: no-repeat !important;
+    background-position: 50% !important;
+}
+
+.action {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	margin-right: 10px;
+	float: left;
+	background-color: var(--action-background);
+}
+.action::after {
+	content: "";
+	display: inherit;
+    width: 100%;
+	height: 100%;
+    background-size: 30%;
+    -webkit-filter: var(--comm-filter);
+            filter: var(--comm-filter);
+}
+.action.one::after {
+	background: url(svg/arrow.down.svg);
+	background-size: 65%;
+}
+.action.two::after {
+	background: url(svg/chevron.down.svg);
+	background-size: 65%;
+}
+.action.three::after {
+	background: url(svg/chevron.compact.down.svg);
+	background-size: 65%;
+}
+.action.more::after {
+	background: url(svg/chevron.forward.2.svg);
+	background-size: 65%;
+	-webkit-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	        transform: rotate(90deg);
+}
+.action.more {float: right;margin:0 0 0 10px}
+
+img {
+	position: relative;
+	display: block;
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+    z-index: 1
+}
+/*.album img {
+	top: calc((270px - 270px)/-2)
+}*/
+f {
+	position: relative;
+    min-width: 40px;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    display: block;
+    border-radius: inherit;
+    background-color: var(--cover-background);
+}
+f::before {
+	content: "";
+	position: absolute; left: 0; top: 0;
+	width: 100%;
+	height: 100%;
+	/*background: url(svg/music.svg);
+	background-size: auto 100%;
+	-webkit-filter: var(--cover-filter);
+	        filter: var(--cover-filter);*/
+	background: url(svg/loading.gif) no-repeat;
+	background-size: auto 40%;
+	opacity: .4
+}
+f.album::before {
+	background: url(svg/music.svg);
+	background-size: auto 100%;
+	-webkit-filter: var(--cover-filter);
+	        filter: var(--cover-filter);
+	opacity: 1
+}
+f::after {
+    content: "";
+    position: absolute; left: 0; top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    -webkit-box-shadow: inset 0 0 0 1px hsla(0,0%,50%,.1);
+            box-shadow: inset 0 0 0 1px hsla(0,0%,50%,.1);
+    z-index: 1;
+}
+.album {
+	overflow: visible;
+    min-width: 270px;
+    min-height: 270px;
+    margin: 15px auto 18px;
+    -webkit-box-shadow: 0 10px 20px 0 rgba(0,0,0,.1);
+            box-shadow: 0 10px 20px 0 rgba(0,0,0,.1);
+    z-index: 3
+}
+.album img {
+	position: absolute;
+	border-radius: inherit
+}
+.album, .album::after {
+	border-radius: 10px;
+}
+blu::after {
+	content: "";
+	display: block;
+	border-radius: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: scale(.88);
+	    -ms-transform: scale(.88);
+	        transform: scale(.88);
+	-webkit-transform-origin: bottom center;
+	    -ms-transform-origin: bottom center;
+	        transform-origin: bottom center;
+	-webkit-filter: blur(20px) saturate(2);
+	        filter: blur(20px) saturate(2);
+	opacity: .3
+}
+
+sub0, sub1, sub2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+sub0 {
+	font-size: 26px;
+	font-weight: 600;
+	margin-bottom: -2px;
+	color: var(--sub0-color)
+}
+sub1 {
+	font-size: 26px;
+	padding: 5px 0;
+	margin: -5px 0;
+	color: var(--sub1-color)
+}
+sub1:hover {
+	text-decoration: underline
+}
+sub2 {
+	font-size: 12px;
+	margin-top: 4px;
+    color: var(--sub2-color)
+}
+/*sub2::after {
+	content: "";
+	display: block;
+	width: 14px;
+	height: 14px;
+	margin-left: 3px;
+	background: url(svg/n.square.fill.svg);
+	background-size: auto 100%;
+	filter: var(--exclipt-filter);
+}*/
+play {
+	font-weight: 600;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	min-height: 28px;
+	min-width: 127px;
+	margin: 18px auto 0;
+	padding: 0 12px;
+	border-radius: 6px;
+	color: var(--sub1-color);
+	background-color: var(--play-background);
+	-webkit-transition: background-color .2s;
+	-o-transition: background-color .2s;
+	transition: background-color .2s;
+}
+play:hover {
+	color: white;
+	background-color: #b00
+}
+play:hover::before {
+	-webkit-filter: invert(1);
+	        filter: invert(1)
+}
+play::before {
+	content: "";
+	width: 16px;
+	height: 12px;
+	margin: 0 2px 2px 0;
+	background: url(svg/play.svg);
+	background-size: auto 100% !important;
+	-webkit-filter: var(--comm-filter);
+	        filter: var(--comm-filter);
+}
+play + div {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: reverse;
+	    -ms-flex-direction: column-reverse;
+	        flex-direction: column-reverse;
+	position: relative;
+	width: 100%;
+	max-width: 440px;
+	margin: 18px auto 0;
+}
+.description {
+	word-wrap: break-word;
+	display: block;
+    /*display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;*/
+    overflow: hidden;
+    line-height: 1.38462;
+    color: var(--description-color);
+}
+input:checked + .description {
+	display: block;
+}
+input.desc-more {
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 1.27273;
+	position: absolute;
+	right: 0; bottom: 0;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+	text-align: right;
+	margin: 0;
+	padding: 1px 0 1px 31.5px;
+	color: var(--more);
+	background: -o-linear-gradient(left, transparent, var(--background) 32px);
+	background: linear-gradient(to right, transparent, var(--background) 32px);
+}
+input.desc-more::after {content: "ЕЩЕ"}
+input.desc-more:checked:after {content: "СКРЫТЬ"}
+input.desc-more:checked {
+	position: relative;
+	width: 100%;
+	background: none;
+}
+
+.rate {
+	position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    border-radius: 6px;
+    padding: 7px;
+    color: var(--track);
+}
+.n::before {
+	content: "";
+    display: block;
+    position: absolute;
+    left: -15.5px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--new);
+}
+.rate:nth-child(odd) {background-color: var(--block-background)}
+.rate:has(comm:hover) {background-color: var(--block-hover)}
+//.rate:has(comm:hover)/*, .rate.n*/ {background-color: var(--new-background)}
+.rate f {
+	margin-right: 12px;
+}
+song {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    margin-right: 7px;
+}
+song::after {
+    content: attr(artist);
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+    color: var(--artist);
+}
+.rate:has(comm:hover) song, .rate:has(comm:hover) song::after {color: white}
+comm {
+	width: 21px; min-width: 21px;
+	height: 21px;
+    margin-left: auto;
+    border-radius: 50%;
+}
+comm:has(ent) {background-color: hsla(0,0%,50%,.35)}
+comm:has(ent:empty), comm:hover {background-color: transparent}
+comm::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+    background-size: auto 70% !important;
+    -webkit-filter: var(--comm-filter);
+            filter: var(--comm-filter);
+}
+comm:hover::after {-webkit-filter: invert(1);filter: invert(1)}
+
+.rate.l comm::after {background: url("svg/checkmark.svg")}
+.rate.l5 comm::after {background: url("svg/heart.fill.svg")}
+.rate.l4 comm::after {background: url("svg/hand.thumbsup.fill.svg")}
+.rate.l3 comm::after {background: url("svg/smiley.svg")}
+.rate.l2 comm::after {background: url("svg/hand.thumbsdown.svg")}
+
+.ratee, div[class$="rate"] comm, ent:empty {display: none !important}
+ent {
+    display: none;
+	position: absolute;
+	right: 4px; top: 66%;
+	max-width: 250px;
+	padding: 8px 10px;
+	border-radius: 6px;
+	background-color: var(--ent-background);
+	-webkit-backdrop-filter: blur(60px) saturate(210%);
+	        backdrop-filter: blur(60px) saturate(210%);
+	-webkit-box-shadow: var(--ent-shadows);
+	        box-shadow: var(--ent-shadows);
+	color: var(--ent-color);
+	z-index: 2;
+}
+comm:hover ent {
+	display: block;
+}
+ent::afterr {
+	content: "Copy!";
+	display: block;
+	background-color: #ffffff50;
+}
+ent img {
+	border-radius: inherit;
+	margin: 2px 0
+}
+sub3 {
+	line-height: 1.38462;
+	display: block;
+	padding: 44px 0 43px 12px;
+	color: var(--sub3-color);
+}
+.popa {
+	display: none;
+	height: 100px;
+	background-color: var(--popa-background);
+}
+
+.redbox {
+	position: sticky;
+	bottom: 0;
+	display: none;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	font-size: 11px;
+	font-weight: 500;
+	width: calc(100% - 60px);
+	margin: 0 auto;
+	padding: 12px 30px;
+	gap: 8px;
+	color: hsla(0,0%,100%,.8);
+	background-color: #d60017;
+	-webkit-box-shadow: 0 -1px 0 rgba(0,0,0,.05), 0 -1px 3px rgba(0,0,0,.07);
+	        box-shadow: 0 -1px 0 rgba(0,0,0,.05), 0 -1px 3px rgba(0,0,0,.07);
+	z-index: 3;
+}
+.redbox .hed {
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.28;
+	color: white;
+/*	padding: 7px 0;*/
+}
+.box.body:has(.n) ~ .redbox {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.redbox input {
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
+	position: absolute;
+	top: calc(50% - 15px);
+	right: 0;
+	width: 10px;
+	height: 10px;
+	margin: 10px;
+	background: url(svg/close.svg);
+	background-size: 100%;
+}
+.redbox:has(input:checked) {
+	display: none !important;
+}
