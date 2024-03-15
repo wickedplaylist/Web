@@ -6,17 +6,9 @@
     <link rel="stylesheet" href="style.css">
     <!--<link rel="stylesheet" href="desktop.css" media="screen and (min-width: 484px)">-->
     <title>Плейлист</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script>
-registerListener('load', setLazy);registerListener('load', lazyLoad);registerListener('scroll', lazyLoad);var lazy = [];
-function setLazy(){lazy = document.getElementsByClassName('lazy');console.log('Found ' + lazy.length + ' lazy images');} 
-function lazyLoad(){for(var i=0; i<lazy.length; i++){if(isInViewport(lazy[i])){if (lazy[i].getAttribute('data-src')){lazy[i].src = lazy[i].getAttribute('data-src');lazy[i].removeAttribute('data-src');}}}cleanLazy();}function cleanLazy(){lazy = Array.prototype.filter.call(lazy, function(l){ return l.getAttribute('data-src');});}
-function isInViewport(el){var rect = el.getBoundingClientRect();return (rect.bottom >= 0 && rect.right >= 0 && rect.top <= (window.innerHeight || document.documentElement.clientHeight) && rect.left <= (window.innerWidth || document.documentElement.clientWidth));}
-function registerListener(event, func) {if (window.addEventListener) {window.addEventListener(event, func)}else {window.attachEvent('on' + event, func)}}
-</script>
 <style>
-sub3::before {content: "25 Февраля 2024"}
-sub3::after {content: "12 ч. 34 мин."}
+sub2::before {content: "8 Марта 2024"}
+sub3::after {content: "12 ч. 43 мин."}
 blu::after{background:url(https://sun1-85.userapi.com/s/v1/ig2/ARr2s1PlmXOSKYzO9B34VwOtetlD_40QjQm4MKrUwM6DCL49uFibIQ8PwG65mctoE9RQ6_v0Wbu51NTQZkcePIMT.jpg?size=400x400&quality=95&crop=198,655,1532,1532&ava=1) 50% no-repeat;background-size: 100%}
 </style>
 </head>
@@ -32,839 +24,844 @@ blu::after{background:url(https://sun1-85.userapi.com/s/v1/ig2/ARr2s1PlmXOSKYzO9
     <sub0>п*м б*м ПЕСЕНКИ</sub0>
     <sub1>лера</sub1>
     <!--<sub2>Обновления:&nbsp;<span class="changes"></span></sub2>-->
+    <sub2>&nbsp;г.</sub2>
     <play><span class="rated"></span>&nbsp;из&nbsp;<span class="all"></span>&nbsp;послушано</play>
     <div><input style="display:none" type="checkbox" class="desc-more"/>
     <div class="description">На основе телеграмовских твоих упоминаний с февраля 2022. Состоит весь почти из того, чего не слышал до этого. Спасибо, что делишься :)</div></div></div>
     <!--<div class="description">Фронтмен «ЛСП» Олег Савченко, закончивший филологический факультет, профессионально работает со словом. В его текстах о любви прямота сочетается с философскими размышлениями, признания в изменах&nbsp;— с самоанализом, а рэперский кураж&nbsp;— с нежностью R&amp;B.</div></div></div>-->
     <div class="box body">
     
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/fc457d27a8c0b7fc6f9b56fb94e22a0d/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/fc457d27a8c0b7fc6f9b56fb94e22a0d/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Muse">Supermassive Black Hole</song>
 <comm><ent>посмотрел еще Хорошее время с Паттинсоном<br>жесть он 🥵, только сейчас понял</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/294ee6ca1fce766b4e4e33799e18d231/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/294ee6ca1fce766b4e4e33799e18d231/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Chris Isaak">Wicked Game (Remastered)</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/91292db59e1bfd762bed26f30afd5e5b/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/91292db59e1bfd762bed26f30afd5e5b/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Винтаж">Ева</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/650d9a956e1c27a98abc58389a9f82a5/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/650d9a956e1c27a98abc58389a9f82a5/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Земфира">спид</song>
 <comm><ent>😡🤬🤬<br><br>и в очередной раз она прекрасна</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/d874b4192adabfd729a3848333ce8971/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/d874b4192adabfd729a3848333ce8971/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Нервы">Так как надо</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/61624b0b1e60c0b7924b3b8f2584fc14/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/61624b0b1e60c0b7924b3b8f2584fc14/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="t.A.T.u.">Я сошла с ума</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/69b09ba4dea61e116793bde3bec62dea/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/69b09ba4dea61e116793bde3bec62dea/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Михаил Боярский">Спасибо родная</song>
 <comm><ent>голос у него такой приторный шаловливый - извращенца старого задорного аккуратного, не утратившего осторожность: умение вовремя скрыться для него не проблема, но однако ж любит иногда мироощущать остро</ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/c9c8152ed9d281a1dff7332ceed53ecd/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/c9c8152ed9d281a1dff7332ceed53ecd/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Николай Носков">Паранойя</song>
 <comm><ent>это что<br>до чего же он странный!!!</ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/21fb9d53b9114edceac0836d45e15f7e/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/21fb9d53b9114edceac0836d45e15f7e/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Кино">Лето</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/6ac1a93542403e02c491083ae987518e/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/6ac1a93542403e02c491083ae987518e/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="John Lennon">Mind Games (Remastered 2010)</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/f220ccb8ea33b4f6acfaf41cc82a5617/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f220ccb8ea33b4f6acfaf41cc82a5617/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Игорь Тальков">Летний дождь</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/0e0857184c9f93ae743b343dc1f7c08b/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/0e0857184c9f93ae743b343dc1f7c08b/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Дайте танк (!)">Мы</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/dccae3a8f529a131949d2275494ae384/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/dccae3a8f529a131949d2275494ae384/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Валентин Стрыкало">Дешёвые драмы</song>
 <comm><ent>Взрослые травмы у меня больше чувств вызывают.<br>А если уж совсем по части что пахнет моими слезами, так это 92. Недавно услышал, ну а дальше мы с ней как в тексте: как-то встретились и всё., всё.<br><br>Очень люблю крайний альбом</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/1cb8dd4a9140b09e496af97562773859/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/1cb8dd4a9140b09e496af97562773859/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Oxxxymiron">Город под подошвой</song>
 <comm><ent>пропустил я как-то волну хайпа на этот трек, ну да и к лучшему<br><br>👊🤨</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoLcMC0N7R8QJpOoDm8W3LbqYmp5YFt7BmoA&usqp=CAU" alt=""></f>
+<div class="rate l"><f><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoLcMC0N7R8QJpOoDm8W3LbqYmp5YFt7BmoA&usqp=CAU" alt=""></f>
 <song artist="Геннадий Хохлов">Белые ночи Усинска</song>
 <comm><ent>обычная песенка, а в голове мысли связанные с тобой</ent></comm></div>
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/8266365a39e197415cfe790a862a7a99/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8266365a39e197415cfe790a862a7a99/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Марсель">Предубеждение и Гордость (Концертная версия)</song>
 <comm><ent>забавно слушать это вот сейчас 9 августа да</ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/197d76f953f09876896b44ab4c25efb8/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/197d76f953f09876896b44ab4c25efb8/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Серебряная свадьба">Черная речка</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/03f728312bcd6d5c14193595cdcd4b4c/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/03f728312bcd6d5c14193595cdcd4b4c/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Михаил Шуфутинский">Саня</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/14d6ff61b73d242e76ff063005dd831f/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/14d6ff61b73d242e76ff063005dd831f/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Ляпис Трубецкой">Пастушок</song>
 <comm><ent>АААА ТАКИХ СЕРЕГ Я НЕ ЗНАЮ</ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/5c7952ff482697e4c203bb27a4e7d51b/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/5c7952ff482697e4c203bb27a4e7d51b/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Бумбокс">Летний дождь</song>
 <comm><ent>первое впечатление оно такое<br><br>песня про миньонов и бананы я раскусил, я слышал!<br>ты можешь и дальше скрывать свою любовь к этим желтым но мне всё известно...<br><br>даже с клипом не цепляет</ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/db588cbe37c78a037e8eeb382dff1753/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/db588cbe37c78a037e8eeb382dff1753/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Кино">Хочу перемен</song>
 <comm><ent>где-то в морге, холодные и едва накрытые стопы</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/470a00baa2d2ba178358fac57a349206/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/470a00baa2d2ba178358fac57a349206/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Кино">Спокойная ночь</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/650d9a956e1c27a98abc58389a9f82a5/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/650d9a956e1c27a98abc58389a9f82a5/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Земфира">ромашки</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/e7ead6de36ca2bb4a22a788d3eb77b00/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/e7ead6de36ca2bb4a22a788d3eb77b00/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Земфира">крым</song>
 <comm><ent>неплохая такая</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/cf842170cfbc89e55a54ae5ad9b5cfbb/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/cf842170cfbc89e55a54ae5ad9b5cfbb/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Pharaoh">Unplugged 2: Love Kills</song>
 <comm><ent>лучшая наверное версия анплагдт,а,,<br><br>пик ахуенности образа, его сочетаемости с творчеством, товарища Фараона, на мой вкус, закончился после MDD в 21-м<br>Эми<i>(и эта эмоциональная отдача на концертах под него!)</i>, Route 333, 1 из Легенд.<br>А нынешний поворот в попсу в двух последних альбиках... Не моё</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/917299c2c997bb384f8845064ec13460/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/917299c2c997bb384f8845064ec13460/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Бумбокс">Жаль</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/d62cbf16b3ccafbacbb0afdc06c14fcb/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/d62cbf16b3ccafbacbb0afdc06c14fcb/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Наутилус Помпилиус">Крылья</song>
 <comm><ent>по-моему в связке с фильмом выглядит всрато</ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/14c29a12fff5aecaab43b6647169b723/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/14c29a12fff5aecaab43b6647169b723/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Theory of a Deadman">Angel</song>
 <comm><ent>go на мейн дороге и беках прикольные<br>а больше сказать нниче не могу</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/6fa67b8b6e93e4668b0a92501c0e0784/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/6fa67b8b6e93e4668b0a92501c0e0784/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Uma2rman">Кажется</song>
 <comm><ent>голос теплый слишком и толиком беззаботный что-ли для подобного текста, не какого-нибудь Аффинажа.<br><br>проигрыши хорошие, гомосексуальные</ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/82b0f390baf1c94382f7e3293c361621/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/82b0f390baf1c94382f7e3293c361621/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="ЩЕНКИ">Ненависть</song>
 <comm><ent>давай!!!!</ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/08ec47c1570029026c0ee19b5e00f01d/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/08ec47c1570029026c0ee19b5e00f01d/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Виктор Салтыков">Улетели листья с тополей</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/99ea6c94c8ede66b6e9844756e99da5f/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/99ea6c94c8ede66b6e9844756e99da5f/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Рок-Острова">Ничего не говори</song>
 <comm><ent>ужас, каждый раз вздрагиваю от вибрации, ставлю на паузу, а это в песне!!!<br>на 1:46</ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/8748e5b3f51b73df86af1b177a226f28/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8748e5b3f51b73df86af1b177a226f28/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Валентин Стрыкало">Колыбельная</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/1a81bcd5543be9705c0c66e57593a258/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/1a81bcd5543be9705c0c66e57593a258/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Katrina & The Waves">Walking On Sunshine</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/241b9e2cabd830674ca34602e65612f9/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/241b9e2cabd830674ca34602e65612f9/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Бутырка">Шарик</song>
 <comm><ent>мой дедушка фан бутырки. в его машине постоянно играла</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/efa9899ec1bbfb8c328834da5562d76b/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/efa9899ec1bbfb8c328834da5562d76b/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Сплин">Она была так прекрасна</song>
 <comm><ent>душевная такая, под ночные одиночные прогулки</ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/f78d110b60a48da31961e32934fdd8ff/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f78d110b60a48da31961e32934fdd8ff/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Георгий Абрамов">Эх, дороги</song>
 <comm><ent>а мне не нравятся советские песни.<br>грустью веет за людей<br><br>а фрагмент с Голоса не зацепил меня неэмпата</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/f08424290260e58c6d76275253b316fd/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f08424290260e58c6d76275253b316fd/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Radiohead">Creep</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/a82a73ef69aeb5e306c8f864c0740753/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/a82a73ef69aeb5e306c8f864c0740753/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Земфира">Самолет</song>
 <comm><ent>ебанись она с этого самолета<br><br>а песенка классная<br><br>хочу вдруг, когда-нибудь, оказывшись у трапа, понять что аэрофоб и сесть</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/8bae8d932aea208fa5a8ecdf1799c423/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8bae8d932aea208fa5a8ecdf1799c423/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Земфира">ХОЧЕШЬ?</song>
 <comm><ent>хиточек<br>но альбомы я ее слушать не могу, ничего почти не цепляет</ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/8bae8d932aea208fa5a8ecdf1799c423/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8bae8d932aea208fa5a8ecdf1799c423/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Земфира">П.М.М.Л.</song>
 <comm><ent>эта на втором месте после спида, пожалуй</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/5db4d04a9d74ebb31222342adeadff8d/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/5db4d04a9d74ebb31222342adeadff8d/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Земфира">ЖИТЬ В ТВОЕЙ ГОЛОВЕ</song>
 <comm><ent>понравилась с первого раза, и мотив очень легко запоминается</ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/d65f808246388f76edcdb4653661ec9b/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/d65f808246388f76edcdb4653661ec9b/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Uma2rman">Проститься</song>
 <comm><ent>переслушал и вспомнил что во мне так отозвалось:<br><br>чуства сильной ностальгии, прыжок во времена, где годов мне 4-5<br>и конкретно кажется, что она бы подошла к какому-то сериалу, что шел тогда по телеку<br>название не помню или не хочу говорить</ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/05a186e0a859a36f9cd51cdae2158fe1/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/05a186e0a859a36f9cd51cdae2158fe1/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Radiohead">Exit Music (For A Film)</song>
 <comm><ent>впервые услышал её в чёрном заркале, s3e3<br>разумеется понравились и серия, и титровая эта ДЕРЕВЯНКА (павел)🧲</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/dfabd8282de2f3d62e32cd3192267c37/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/dfabd8282de2f3d62e32cd3192267c37/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Шура">Ты не верь слезам</song>
 <comm><ent>шепелявит как юра хован</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/e92a46b7e2132f83a0416b0e4606c131/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/e92a46b7e2132f83a0416b0e4606c131/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Flo Rida">Whistle</song>
 <comm><ent>че так это ОНА?<br>уголёк жестко чувствует вайб хангер геймс майнкрафтпе 2016😎</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/ca10af32b94b5a0caf231b9bc7a3c0ae/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/ca10af32b94b5a0caf231b9bc7a3c0ae/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Крематорий">Мусорный ветер</song>
 <comm><ent>♥️💀👏👏</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/22fd49f29534e957d2a966d3027ee1c0/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/22fd49f29534e957d2a966d3027ee1c0/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Земфира">кто?</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/661941861751a4bd771415911e242ba2/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/661941861751a4bd771415911e242ba2/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Елена Камбурова">Маленький принц (из к/ф "Пассажир с экватора")</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/8348154fc693936f20f004522f91254f/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8348154fc693936f20f004522f91254f/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Михаил Шуфутинский">Пальма де Майорка</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/1f96e6c23c0dc273529a578f3e381f02/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/1f96e6c23c0dc273529a578f3e381f02/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="The Smile">Skrting On The Surface</song>
 <comm><ent>здесь я понял, что не могу ощущать романтику жизни своей.<br>но ведь она есть .?<br><br>расплыться по полу заброшенного здания и плакать о помощи<br><br>полуночный пляж, где ни единой души, смотрю, как луна скользит по глади моря</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/e2065a7d48bb18bec173e25fef814312/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/e2065a7d48bb18bec173e25fef814312/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Песняры">Вологда</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/329b66d80fb788383e50b38535175f78/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/329b66d80fb788383e50b38535175f78/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Ник Ким, Группа Арамис">Валерия</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/f6968c5a9ce61c8543c5d68e7c6e44e9/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f6968c5a9ce61c8543c5d68e7c6e44e9/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Garou, Patrick Fiori, Daniel Lavoie">Belle</song>
 <comm><ent>я в мюзиклах шарю как навальный леха за воздух внетюремный<br>ШИЗО</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/c5ffc68452fdaf9c02230b5336bfd4e5/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/c5ffc68452fdaf9c02230b5336bfd4e5/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Король и Шут">Тяни!</song>
 <comm><ent>тяни тащи тащи тащи меня за сальные волосы</ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/f4d581f4b86c869547704d7db9aa2c43/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f4d581f4b86c869547704d7db9aa2c43/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Gorillaz">Clint Eastwood</song>
 <comm><ent>засрать всё, добавив сюда читающего негра, было очень просто</ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/f694093e743c7fe0fc24ced31247c6ce/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f694093e743c7fe0fc24ced31247c6ce/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Natasha Bedingfield">Pocketful of Sunshine</song>
 <comm><ent>отлично заходит, если по настроению ты не как подошва<br>🤳📱(лалала😛)<br>спасибо за неё!</ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/6f55ff3cc5c478510c948024e95cf8d6/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/6f55ff3cc5c478510c948024e95cf8d6/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="The Neighbourhood">Sweater Weather</song>
 <comm><ent>пускает не особо приятные мысли. скорее понравилась<br><br>счастливые моменты, которые не вернуть.</ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/dfb22559b5f3159a7404ffbc7f16ce84/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/dfb22559b5f3159a7404ffbc7f16ce84/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="The Neighbourhood">Leaving Tonight</song>
 <comm><ent>😳</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/d7e61dfd63605961d3ed26b11651fc68/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/d7e61dfd63605961d3ed26b11651fc68/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Найк Борзов">Последняя песня</song>
 <comm><ent>образы, ОБРАЗЫ</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/7bd78e07172d19014af1124fcb9cd21b/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/7bd78e07172d19014af1124fcb9cd21b/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Валерий Леонтьев">Казанова</song>
 <comm><ent>как на подобное реагировать 😧</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/1c9b79642bc63e3944ba0d214255ae59/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/1c9b79642bc63e3944ba0d214255ae59/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Anacondaz">Твоему новому парню</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/9215d8b5fdd5ba1a73725184d326b119/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/9215d8b5fdd5ba1a73725184d326b119/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Бумбокс">Вахтерам</song>
 <comm><ent>ЧИУА УА<br>не знаю, не слыш... да, слышал.<br>есть в ней особая для меня романтика начала десятых<br><br>группу бумбокс не катирую</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/92f8a4182c56d5e8253be5de616e5128/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/92f8a4182c56d5e8253be5de616e5128/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Нэнси">Дым сигарет с ментолом</song>
 <comm><ent>проигрыш легендарный.<br>под настроение</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/7c1237e3312dff8c41261bf5962409db/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/7c1237e3312dff8c41261bf5962409db/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Сектор Газа">Бомж</song>
 <comm><ent>сука бомж я уронил на асфальт телефон представляешь</ent></comm></div>
 
-<div class="rate l2"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/bd904e47db5549124f099c1fef304dc9/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l2"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/bd904e47db5549124f099c1fef304dc9/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Britney Spears">...Baby One More Time</song>
 <comm><ent>интересно она чможет закричать как тирекс ну или гадза</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/dc71e4acd1dc5aada2f144b898e35ba4/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/dc71e4acd1dc5aada2f144b898e35ba4/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Катя Лель">Муси-пуси</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/1f9c6700d68103ea2da74d5b72cc047b/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/1f9c6700d68103ea2da74d5b72cc047b/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Кино">Саша</song>
 <comm><ent>лучшая версия из всех трех<br><br>и голос у него поучительный что-ли</ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/77a31ba75523944643f0cdf0b607400d/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/77a31ba75523944643f0cdf0b607400d/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Кино">Саша</song>
 <comm><ent>чето земфиру вспомнил</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/40590c9a35866efc33a2b83db54e866d/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/40590c9a35866efc33a2b83db54e866d/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Кино">Саша</song>
 <comm><ent>вайб музыкантов бременских?</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/72b13d45327d6b676caacad20db4f846/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/72b13d45327d6b676caacad20db4f846/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Аффинаж">Саша</song>
 <comm><ent>при очередном прослушивании гораздо привлекательнее<br><br>она весьма грустная, тяжело слушать 😥</ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/401be0259eb5b7196313f94f34b27397/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/401be0259eb5b7196313f94f34b27397/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Аффинаж">Герой моих детских грёз</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/6eabee34f76bd01d2562469d41c63c4d/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/6eabee34f76bd01d2562469d41c63c4d/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Rammstein">Sonne</song>
 <comm><ent>это женское пение на заднем плане 😪<br><br>охуенная, а еще весь альбом этот весьма хорош я сказал и возражений не принимаю иначе обижусь ясно</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/fbad303ec3033c647dc7ad5496ea41d4/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/fbad303ec3033c647dc7ad5496ea41d4/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Дайте танк (!)">Маленький</song>
 <comm><ent>первый мой! танковский дайте заберите<br>ура? да никаких впечатлений ээээ<br><br>UPD: уже как глупая аксиома - многое, которое сначала не зашло, после раскрывается с дургой стороны, стоит только не анализировать каждую строчку, каждую секунду, а просто получать удовольствие</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/9422adeef573153ec5262946145fbfa3/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/9422adeef573153ec5262946145fbfa3/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Дайте танк (!)">Обиды</song>
 <comm><ent>с него вот я например эволюционировал до уровня хейтера группы этой сраной<br><br>UPD: со второго прослушивания уже врубаюсь понемногу</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/c276ebb317b98d987389e17ef7111770/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/c276ebb317b98d987389e17ef7111770/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Дайте танк (!)">Люди</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/7efc0c5e453c5e00ccdcfca8a6c6705c/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/7efc0c5e453c5e00ccdcfca8a6c6705c/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Женя Белоусов">Девчонка-девчоночка</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/5d2fbd3efbc5bb0522c0827da51d8890/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/5d2fbd3efbc5bb0522c0827da51d8890/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Майя Кристалинская">Твои глаза (Из к/ф "Человек идёт за солнцем")</song>
 <comm><ent>своеобразная атмосфера Бегущего по лезвию 1982. И эти репликанты с глазами, будто в каждом по два зрачка ...</ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/a28fc1a4c6b11be4114995b5bed5e51a/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/a28fc1a4c6b11be4114995b5bed5e51a/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Sarah Cothran">As the World Caves In</song>
 <comm><ent>похоже на очень пафосную сцену смерти в пещере во время опасного прилива<br><br>нет, тебе не сильно грозит уйти под воду по желанию природы - ты нашел воздушный карман<br><br>но ты в итоге сам утопишься после этой песни ну патамуша нахуй после жить вообще, када сие было так ахуенно</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/65e580b5e941f0d5e3c544bd250b9af5/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/65e580b5e941f0d5e3c544bd250b9af5/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Kizaru">Дежавю</song>
 <comm><ent>можно слушать только инструментал, так даже лучше</ent></comm></div>
 
-<div class="rate l2"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/f1fd0b3d845efb652ce65023405ff406/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l2"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f1fd0b3d845efb652ce65023405ff406/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Гречка">Анимешница</song>
 <comm><ent>сведос говно, голос неприятный, слушать невозможно автору смерти мне понравилось</ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/f3c0e43c91e9125eb2891735db0b8dcd/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f3c0e43c91e9125eb2891735db0b8dcd/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Стас Михайлов">Без тебя</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/dc42d0d3f7d15a286d4e204f67ca7b1b/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/dc42d0d3f7d15a286d4e204f67ca7b1b/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Гражданская Оборона">Без меня</song>
 <comm><ent>тречок одноименный с этим же альбомом, долгая счастливая жизнь, очень нравится</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/a62020e69c5d4e4664d54c63fff5ce7a/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/a62020e69c5d4e4664d54c63fff5ce7a/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Владимир Клявин">Планы</song>
 <comm><ent>слышу его, представляю летова<br>а еще мотив что-то напоминает...</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/8a7c544ce76eee67636895d79ef68c69/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8a7c544ce76eee67636895d79ef68c69/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Николай Караченцов">Ты меня на рассвете разбудишь</song>
 <comm><ent>я тебя не забуду</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/c2cac930150aff4972c6e7c320d6b6b2/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/c2cac930150aff4972c6e7c320d6b6b2/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Noize MC">Моё море</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/94d0511a74d839ec83cda3459f488249/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/94d0511a74d839ec83cda3459f488249/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Noize MC">Вселенная бесконечна?</song>
 <comm><ent>Нойза недолюбливаю, ноо<br>    черт возьми</ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/c2cac930150aff4972c6e7c320d6b6b2/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/c2cac930150aff4972c6e7c320d6b6b2/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Noize MC">Выдыхай</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/5fec014110fb92c8928bc67795d58f3c/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/5fec014110fb92c8928bc67795d58f3c/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Несчастный случай">Что ты имела в виду</song>
 <comm><ent>НА МОМЕНТЕ С ПТЕРОДАКТИЛЬСКИМ СКРИМОМ ПОРВАЛО КОНКРЕТНО. гений</ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/ff2fe89fa2e7b00a4498648fc732b05e/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/ff2fe89fa2e7b00a4498648fc732b05e/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Нервы">Вороны</song>
 <comm><ent>пиздец. хочется срастись со стеной этой сраной остановки<br>и меня от всего в очередной раз тошнит не хочу видеть не хочу ощущать больше ничего</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/8748e5b3f51b73df86af1b177a226f28/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8748e5b3f51b73df86af1b177a226f28/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Валентин Стрыкало">Знаешь, Таня</song>
 <comm><ent>классика сплю я с пушкою под подушкою</ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/5c85be55f6a126d875a027d22b05833c/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/5c85be55f6a126d875a027d22b05833c/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Аквариум">25 к 10</song>
 <comm><ent>на самом деле, как песня - слабо</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/cc742be2e0b26451bb85d69709a24253/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/cc742be2e0b26451bb85d69709a24253/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Пошлая Молли">Самый лучший эмо панк</song>
 <comm><ent>🤨🤨</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/6876bbaf05cc6df88f1eeef5e02ba582/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/6876bbaf05cc6df88f1eeef5e02ba582/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="ЩЕНКИ">Белое на белом</song>
 <comm><ent>п****ц<br>мне понравилось, лайк!</ent></comm></div>
 
-<div class="rate l2"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/26b32bee8adf7709ec33bfa1c5d46187/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l2"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/26b32bee8adf7709ec33bfa1c5d46187/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="УННВ">Всё будет хорошо</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/5b8248793f7e3593f983e33d669cccc2/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/5b8248793f7e3593f983e33d669cccc2/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Макулатура">нейт диаз</song>
 <comm><ent>ну реп он рип эм ля ля пиу пау я дауненок</ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/7793806b55d54bbe2828c49caff2e777/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/7793806b55d54bbe2828c49caff2e777/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Свидание">Забудь в парке</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/dfa9363d1ff6372e0e321dbc9da46ec9/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/dfa9363d1ff6372e0e321dbc9da46ec9/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="The Mamas & The Papas">California Dreamin' (Single Version)</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/1a32936bf356703eb55c8c6f63e9387b/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/1a32936bf356703eb55c8c6f63e9387b/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Reamonn">Tonight</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/dccae3a8f529a131949d2275494ae384/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/dccae3a8f529a131949d2275494ae384/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Валентин Стрыкало">Рустем</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/033e14985cc5c474fcb06351b63e920c/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/033e14985cc5c474fcb06351b63e920c/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Юрий Визбор">Милая моя</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/33ebeb5bea8872f0b937a8aa2635a41b/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/33ebeb5bea8872f0b937a8aa2635a41b/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="ЩЕНКИ">Лакост</song>
 <comm><ent>до слов про шлюх и ёбырей складывалась другая картинка, более нелепо-смешная на мой взгляд эх</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/64004ba994ddb202f8c6f8fc8ecdc77f/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/64004ba994ddb202f8c6f8fc8ecdc77f/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Аида Ведищева">Колыбельная медведицы (Из м/ф "Умка")</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/57dd4754a69acaaf3a8a82f7fd1b8ad3/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/57dd4754a69acaaf3a8a82f7fd1b8ad3/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Jeff Buckley">Hallelujah</song>
 <comm><ent>легендарочка, слова излишни</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/727528cdf2e2a99d397e872fe2bd856e/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/727528cdf2e2a99d397e872fe2bd856e/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="The Killers">Somebody Told Me</song>
 <comm><ent>вот знаешь, не хватает что-ли трагичности<br>всё как-то весёленько слишком, фальшиво. будто это лишь попсовенький проект с красивыми мальчиками<br>а вайб в моментах разгона и вытягивания(?) мне напомнил No One Knows, хотя прием наверное обычный<br><br>некоторые моменты нууу прям очень нравятся, а птом всё запарывают</ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/552f4b953a02ecb92268b1c7a80d9b2d/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/552f4b953a02ecb92268b1c7a80d9b2d/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Twenty One Pilots">Heathens</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/3ad6afef41e7b8780c198733301778af/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/3ad6afef41e7b8780c198733301778af/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Katy Perry">Ur So Gay</song>
 <comm><ent>сподвигает читать Декарта</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/ddb510e4a3264f2893ac2273080d3227/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/ddb510e4a3264f2893ac2273080d3227/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Александр Буйнов">Если у вас нету тети</song>
 <comm><ent>НАКОНЕЦ ПОНЯЛ ОТСЫЛКУ К СТРОЧКЕ ЕСЛИ У ВАС НЕТ СОБАКИ господина лиды</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/a7a16b8f63b1ec0e9fbd327619966737/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/a7a16b8f63b1ec0e9fbd327619966737/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Tyler, The Creator, Kali Uchis">See You Again (feat. Kali Uchis)</song>
 <comm><ent>красивая🙂<br>нравится инструментал</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/406f99fbbb8f44475d4507e373e46f5c/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/406f99fbbb8f44475d4507e373e46f5c/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="XXXTentacion">Revenge</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/5b48e457e1a826a57ae49475b94bfe70/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/5b48e457e1a826a57ae49475b94bfe70/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="ПОРНОФИЛЬМЫ">Прости. Прощай. Привет</song>
 <comm><ent>идеально подобрала <s>завершающую</s>(😬) композицию, браво!</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/e25f5d3c073a2a30be1bbcfec8bdff7c/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/e25f5d3c073a2a30be1bbcfec8bdff7c/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Джизус">ТЫ НИЧЕГО НЕ ПОНЯЛА</song>
 <comm><ent>инцест наверное не одобряю</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/124f5865cfe36747ad175e221be07b9f/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/124f5865cfe36747ad175e221be07b9f/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Татьяна Буланова">Не плачь</song>
 <comm><ent>как-то так получилось, что перешагивания со шпал идеально совпадают с тактом 🛀<br><br>может банально, но вайбозависящая</ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/d11a17310d47e3091f567e9127748e4c/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/d11a17310d47e3091f567e9127748e4c/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Mikhail Krug">Фраер</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/084822874af3f518a42b9e755aa0003c/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/084822874af3f518a42b9e755aa0003c/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="kostromin">Моя голова винтом</song>
 <comm><ent>ожидал издесь чего угодно, но не этого<br>знаешь, стайл сектора газа, носкова, киша... об этом намекали название, даже обложка кислотная аааа</ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/90db17ba5563a51136265536d1d70e43/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/90db17ba5563a51136265536d1d70e43/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Daniel Powter">Bad Day</song>
 <comm><ent>в настроение не попала</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/e1592b9287327fd23d1534b5a3fa63fd/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/e1592b9287327fd23d1534b5a3fa63fd/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Scally Milano, 163Onmyneck, FEARMUCH">Кид Кади</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/f4512b24e2f4fe54fa76e67eb223aa11/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f4512b24e2f4fe54fa76e67eb223aa11/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Sia">Chandelier</song>
 <comm><ent>я вот так же ору, когда стопа решает ебашить налегке жить своей жизнью любить обнимать углы больные<br><br>классикс</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/0c22a6588debd2b699f60842aeb72396/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/0c22a6588debd2b699f60842aeb72396/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Selena Gomez">Everything is Not What it Seems (Theme Song to Wizards of Waverly Place)</song>
 <comm><ent>это что-то со времен лентяева и могучих рейнджеров??<br><br>слышал она сдохла</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/c65b3bd84e81056e060be144381c06c8/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/c65b3bd84e81056e060be144381c06c8/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="The Beatles">Yesterday (Remastered 2015)</song>
 <comm><ent>если б у меня была большая шерстяная капибара, то я бы будил её этим 💥🤔🤔</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/595ae492a34647054ea30d805096d5b5/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/595ae492a34647054ea30d805096d5b5/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Black Eyed Peas">Don't Phunk With My Heart</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/b0fa04be5c52b687eabe2e0dc9e694a9/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/b0fa04be5c52b687eabe2e0dc9e694a9/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Завтраккусто">Кокаинетка</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/2b46db633b5c9c1e56dcce945f032dbd/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/2b46db633b5c9c1e56dcce945f032dbd/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Mikhail Krug">Девочка-пай</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/815265d20df322fc9d27bc43ea70e7de/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/815265d20df322fc9d27bc43ea70e7de/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Николай Носков">Это здорово</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/4f3a75e0df034f5ecfe83d853cd01616/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/4f3a75e0df034f5ecfe83d853cd01616/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="alt-J">Intro</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/8748e5b3f51b73df86af1b177a226f28/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8748e5b3f51b73df86af1b177a226f28/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Валентин Стрыкало">Преждевременное семяизвержение</song>
 <comm><ent><img src="https://imageup.ru/img164/4496259/img_20230825-225033_bromite.jpg" alt=""></ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/a736c82f2de64b6c170b34b0ea1fcc17/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/a736c82f2de64b6c170b34b0ea1fcc17/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="25/17">Жду чуда</song>
 <comm><ent>в атмосферу не погрузиться, за окном нихуя не серо<br>да и в целом не понравилась</ent></comm></div>
 
-<div class="rate l2"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/80909d7a402560e429eb12746b932270/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l2"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/80909d7a402560e429eb12746b932270/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Король и Шут">Ром</song>
 <comm><ent>и опять этот бездарная попытка рассказать историю: ляля пришел забрал он был таков суров ковров ушел говнов<br>ну кринж<br><br><img src="https://imageup.ru/img52/4605612/img_20231105-003355.jpg" alt="">НУ ЧТО БЫ Я ДЕЛАЛ БЕЗ ПОНИМАНИЯ ТАКИХ ОТСЫЛОК</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/e5925065cdb1cefbc3bd75af4a1f1801/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/e5925065cdb1cefbc3bd75af4a1f1801/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Radiohead">Everything In Its Right Place</song>
 <comm><ent>слышал, конечно слышал её раньше</ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/dde66ec3d6cb5d4d6355b1b6ead83a46/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/dde66ec3d6cb5d4d6355b1b6ead83a46/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Ghost">Mary On A Cross</song>
 <comm><ent>падла в голове заедает 🕳️</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/4a938fdc160382fb85bc5f3bfb11b089/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/4a938fdc160382fb85bc5f3bfb11b089/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Nick Cave & The Bad Seeds">O Children</song>
 <comm><ent>как грустно<br>погружаешься в атмосферу сцены с головой</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/f6eb38e5f1d70e6af48fdc7b10d426c1/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f6eb38e5f1d70e6af48fdc7b10d426c1/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Кино">Мама-анархия</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/6cd5bf470c89bb36a13e8321a4a8e411/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/6cd5bf470c89bb36a13e8321a4a8e411/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Михаил Боярский">Зеленоглазое такси</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/5bcd1a23910d87da1a46ca953593229b/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/5bcd1a23910d87da1a46ca953593229b/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Face">Лиза</song>
 <comm><ent>лиза иди нахуй (молодец)</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/63b6f545a931177a5e8f7cd0e371a7f5/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/63b6f545a931177a5e8f7cd0e371a7f5/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Keane">Somewhere Only We Know</song>
 <comm><ent>я люблю когда солнышко светит...</ent></comm></div>
 
-<div class="rate l2"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/464a568d7b958805d51becc5cd25dc11/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l2"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/464a568d7b958805d51becc5cd25dc11/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Сектор Газа">Лирика</song>
 <comm><ent>типа...<br><br>зачем он вообще пытается петь</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/bd8f92c6d4f72045175d697c84275c50/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/bd8f92c6d4f72045175d697c84275c50/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Сплин">Романс</song>
 <comm><ent>хочу жить в квартире со сломанными часами и протухшими календарями<br><br>и каково это селиться над метро</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/a3dff8783205a34f5715af56a91d1350/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/a3dff8783205a34f5715af56a91d1350/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Агата Кристи">Опиум для никого</song>
 <comm><ent>я мажу попу вазелином😶<br>простите...<br><br>знаешь, это конечно не Носков, но что-то странное есть! и клип такой ... классный<br>скорее понравилась</ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/64004ba994ddb202f8c6f8fc8ecdc77f/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/64004ba994ddb202f8c6f8fc8ecdc77f/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Muslim Magomayev, Niyazi Tagizade Hajibeyov, State Symphony Cinema Orchestra, Инструментальный ансамбль п/у Константина Кримца">Серенада Трубадура (Из м/ф "По следам бременских музыкантов")</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdn-images.dzcdn.net/images/cover/32af0bbabd9459d57acc697ae162ca0c/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdn-images.dzcdn.net/images/cover/32af0bbabd9459d57acc697ae162ca0c/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="The Animals">House of the Rising Sun</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/d98d08e767ce7c3a8a3a83de5d3d1302/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/d98d08e767ce7c3a8a3a83de5d3d1302/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Gorillaz, Kali Uchis">She's My Collar (feat. Kali Uchis)</song>
 <comm><ent>а джордж флойд бы...</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/dc24a00d9b649bb90512a61d24210927/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/dc24a00d9b649bb90512a61d24210927/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Anacondaz">Жду чуда</song>
 <comm><ent>да, говнарский кавер получше будет<br><br>еще из 25/17 я слышал только версию «Звезды» от Лсп, а когда ознакомился с оригиналом, умильнулся. Ну он как медвежонок картавый на утреннике стишок рассказывает🥺. Не могу верить этому исполнению абсолютно</ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/c1f5a8cfb68235bd59514a677833211d/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/c1f5a8cfb68235bd59514a677833211d/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="ДДТ">Что такое осень</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/f7985b787e5888cc108b035ff575c3c4/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f7985b787e5888cc108b035ff575c3c4/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Reamonn">Supergirl</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/44e0fbe81ca549290348d3544375e29a/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/44e0fbe81ca549290348d3544375e29a/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Sam Smith">I'm Not The Only One</song>
 <comm><ent>интересна была только мелодия таптаптап таптаптап ТАП</ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://cdns-images.dzcdn.net/images/cover/1e3a7b425d6fef25da840e6183ca6420/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://cdns-images.dzcdn.net/images/cover/1e3a7b425d6fef25da840e6183ca6420/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Naughty Boy, Sam Smith">La La La</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/44e0fbe81ca549290348d3544375e29a/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/44e0fbe81ca549290348d3544375e29a/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Sam Smith">Stay With Me</song>
 <comm><ent>они все у него одинаковые?, даже не понял, что сейчас другая играла</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/8442e9ac0227a07b00c9dfd0ec00032d/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8442e9ac0227a07b00c9dfd0ec00032d/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Hozier">Take Me To Church</song>
 <comm><ent>базовая база</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/ae1ef143dd6852df87eefe8a405c091b/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/ae1ef143dd6852df87eefe8a405c091b/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Kodaline">All I Want</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/e9a170ca0ae06918f9baa6cb109fb321/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/e9a170ca0ae06918f9baa6cb109fb321/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="John Legend">All of Me</song>
 <comm><ent>ну меня вообще такое не цепляет 😭😭😭<br><br>мне он просто не нравится из-за музыкальных приёмов, которые, порой, криповые</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/f775144a9c375ada83e1e014920a4d9a/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f775144a9c375ada83e1e014920a4d9a/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="MAC MILLER">Everybody</song>
 <comm><ent>тоже такая приятная, спокойная, красивая<br>на любителя, я - нет<br>посмотрю, распробую</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/a43843254dd992798512440c59f7a6ae/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/a43843254dd992798512440c59f7a6ae/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Edith Whiskers">Home</song>
 <comm><ent>ай фанчьж ю ен айл кил ю?? классику Molten Light напомнил, разве что настроения разные<br><br>хоули моли!! свистки были лишними.</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/f788559888c86f704a727878029b0eec/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f788559888c86f704a727878029b0eec/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="ПОРНОФИЛЬМЫ">Я так соскучился</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/1c0392005b0d669354868222bc83d2bd/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/1c0392005b0d669354868222bc83d2bd/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="ПОРНОФИЛЬМЫ">Это пройдёт</song>
 <comm><ent>влажны фантазии</ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/ab96ce4efe97ca61f02975289f8f0c00/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/ab96ce4efe97ca61f02975289f8f0c00/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Скриптонит">Это любовь</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/778df3ff4365c46de08d618b3a85f4ef/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/778df3ff4365c46de08d618b3a85f4ef/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Буерак">Сенд нюдс</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/7656216b01cfe7a3bcdd77bfbbf5e8ec/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/7656216b01cfe7a3bcdd77bfbbf5e8ec/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Буерак">Страсть к курению</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/9fb489a94f2226f61e3cbcfb37d08b3a/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/9fb489a94f2226f61e3cbcfb37d08b3a/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="ssshhhiiittt!">засыпай</song>
 <comm><ent>флоу прикольный</ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/5716f2267093c9e6f534a467fdac9e4d/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/5716f2267093c9e6f534a467fdac9e4d/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Электрофорез">Зло</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/ff8fdcb1b5933782bff611aebe3f97b1/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/ff8fdcb1b5933782bff611aebe3f97b1/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="ssshhhiiittt!">Танцы</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l2"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/05363795fcb8ce72f75957e31246fd9b/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l2"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/05363795fcb8ce72f75957e31246fd9b/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Обильный">Ваниль</song>
 <comm><ent>зачем он засемплил лану😭😭 за что</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/4c2c6143c3e83a01ea73517c57d1d138/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/4c2c6143c3e83a01ea73517c57d1d138/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Lana Del Rey">Diet Mountain Dew</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/c0f4f022fa51f13e877aae2e758e241d/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/c0f4f022fa51f13e877aae2e758e241d/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Lana Del Rey">Doin' Time</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/537f1cef9034d1baff03bad5da8213ee/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/537f1cef9034d1baff03bad5da8213ee/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Vance Joy">Riptide</song>
 <comm><ent>для фона подходит хорошо</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/21fb9d53b9114edceac0836d45e15f7e/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/21fb9d53b9114edceac0836d45e15f7e/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Кино">Когда твоя девушка больна</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/835025abe59edd3329e9ee69d8e577ae/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/835025abe59edd3329e9ee69d8e577ae/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Кино">Восьмиклассница</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/e02dbb600e55beceaafed2b6c6c04357/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/e02dbb600e55beceaafed2b6c6c04357/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Ben E. King">Stand by Me</song>
 <comm><ent>джаз? ненавидеть</ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/71671b023585cc8e8d9c27c02ac98117/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/71671b023585cc8e8d9c27c02ac98117/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Интонация">Пускай</song>
 <comm><ent>тот случай знакомой песни из детства, которая могла бы что-нибудь вызывать, но нет</ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/108e397f626287e14722e9f87ac8f882/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/108e397f626287e14722e9f87ac8f882/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Pyrokinesis, МУККА">Днями-ночами</song>
 <comm><ent>бит при первом прослушивании делал моим ушам больно - привык;<br>а к пирокинезису вообще не очень отношусь</ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/e705e6f90c549ed5bd001f9f3139b14b/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/e705e6f90c549ed5bd001f9f3139b14b/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="PIZZA">Назад</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/4b9d095d48e53d2fdc6220a18790554f/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/4b9d095d48e53d2fdc6220a18790554f/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="PIZZA">Фары</song>
 <comm><ent>хорошая, конечно слышал её.<br>есть песни, которые ты слушал в детстве, и моменты из них помнишь до сих пор. вот здесь «проолеетят» на бэк вокале прям въелось.</ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/661941861751a4bd771415911e242ba2/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/661941861751a4bd771415911e242ba2/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Елена Камбурова">Грустная песня миссис Дарлинг (из к/ф "Питер Пэн")</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/c6fea4d8d9c4c01cdbf94696afffda54/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/c6fea4d8d9c4c01cdbf94696afffda54/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Noize MC">Любимый цвет</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/2c3e9f74bde817aa15c7327149290e4a/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/2c3e9f74bde817aa15c7327149290e4a/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Бумбокс">Та4то</song>
 <comm><ent>по крайней мере лучшее из всего что было</ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/e29df808d39deca9d932504f819af078/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/e29df808d39deca9d932504f819af078/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="The Smiths">Please, Please, Please, Let Me Get What I Want</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/597f59e32186995575850b1539c7e303/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/597f59e32186995575850b1539c7e303/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="The Smiths">I Know It's Over</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/453d840b79b6907f315b5157a2f58340/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/453d840b79b6907f315b5157a2f58340/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Алексей Вишня">Шприц</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/4fc676d52a161d75fa92d1fc3d1bcafc/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/4fc676d52a161d75fa92d1fc3d1bcafc/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Город 312">Останусь</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/26e1d3d176b1016ad544e4e14ebe260d/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/26e1d3d176b1016ad544e4e14ebe260d/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Грязь">Расскажи мне о любви</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/9d9355c3014a159fee459611d4ccac41/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/9d9355c3014a159fee459611d4ccac41/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Intelligency">Август</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/22fd49f29534e957d2a966d3027ee1c0/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/22fd49f29534e957d2a966d3027ee1c0/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Земфира">∞</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l2"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/d341c12366676081b75beadf07aef97b/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l2"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/d341c12366676081b75beadf07aef97b/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Anacondaz">Мама, я люблю</song>
 <comm><ent>😬</ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/1bcd8ff22d823daec21debcbf831605a/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/1bcd8ff22d823daec21debcbf831605a/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Лёша Маэстро, Восточный округ">Тебе 17</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l3"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/b39e82e1e4fdaf3f08ae582e8c9565cd/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l3"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/b39e82e1e4fdaf3f08ae582e8c9565cd/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Кино">Мама, мы все сошли с ума</song>
 <comm><ent>честно говоря, уже надоедает этот его паттерн цоевский. ощущение, что слышал всё это у него же и не раз</ent></comm></div>
 
-<div class="rate l5"><f><img class="lazy" data-src="https://t2.genius.com/unsafe/128x128/https%3A%2F%2Fimages.genius.com%2F65d518faa1a880454391412077f7b4f6.1000x1000x1.jpg" alt=""></f>
+<div class="rate l5"><f><img src="https://t2.genius.com/unsafe/128x128/https%3A%2F%2Fimages.genius.com%2F65d518faa1a880454391412077f7b4f6.1000x1000x1.jpg" alt=""></f>
 <song artist="Валентин Стрыкало">Гори</song>
 <comm><ent>)</ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/07cecb9b109fef3ca9d4a5bb340c0db3/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/07cecb9b109fef3ca9d4a5bb340c0db3/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Игорь Николаев">Такси, такси</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/9a45aae1881d645c807b59f629de5211/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/9a45aae1881d645c807b59f629de5211/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Звери">Рома, извини</song>
 <comm><ent>тоже какой-то дефект речи присутствует.<br>шепелявость?</ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/621c706e3416c6c52671ab7fe11878f6/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/621c706e3416c6c52671ab7fe11878f6/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Frank Sinatra">Fly Me To The Moon (2008 Remastered)</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/4508090cc8470e71e12480b7deeda0b4/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/4508090cc8470e71e12480b7deeda0b4/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Lord Huron">The Night We Met</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/c00cb7eb2445c1da5b6de6be8ea8b241/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/c00cb7eb2445c1da5b6de6be8ea8b241/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Frank Sinatra">The World We Knew (Over And Over)</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/86fefa8274ff8c21242bd020de0a4a06/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/86fefa8274ff8c21242bd020de0a4a06/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Наутилус Помпилиус">Я хочу быть с тобой</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/0608cf655dba192fd053a11da02a29da/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/0608cf655dba192fd053a11da02a29da/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="ЩЕНКИ">Весело</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/f0a1d4442389bcd7919a7054f8c0b785/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f0a1d4442389bcd7919a7054f8c0b785/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Maroon 5">Animals</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/3f4b978b8837ba38db025c992ec11854/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/3f4b978b8837ba38db025c992ec11854/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Бумбокс">За буйки</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l4"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/75f709372869a25f6d706f2dc6bd23cb/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l4"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/75f709372869a25f6d706f2dc6bd23cb/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Noize MC">Детка, послушай</song>
 <comm><ent>прикольно, что артисты уводят трек в разные русла. биток хороший<br>лсп с первых секунд забирает харизмой<br><br>распять раз в пять это конечно сильно</ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/8d9fdd5ce1f7e5a4a3774697df0347f3/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8d9fdd5ce1f7e5a4a3774697df0347f3/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="The Killers">Mr. Brightside</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l2"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/8f0c435b36269064f2894c8ebb9a9b49/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate l2"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8f0c435b36269064f2894c8ebb9a9b49/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Noize MC">Ты не считаешь</song>
 <comm><ent>кал какой-то куколдистский в тексте.<br>ну припев неплохой, нудные куплеты</ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/b5edcfd533d25ec1da0b6a44c010f0d2/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/b5edcfd533d25ec1da0b6a44c010f0d2/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Nancy Sinatra">Bang Bang (My Baby Shot Me Down)</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/b39e82e1e4fdaf3f08ae582e8c9565cd/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/b39e82e1e4fdaf3f08ae582e8c9565cd/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Кино">Группа крови</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate"><f><img class="lazy" data-src="https://e-cdns-images.dzcdn.net/images/cover/fad7de079aa103d60ec1e2d1582c2281/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/fad7de079aa103d60ec1e2d1582c2281/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Lady Gaga">Poker Face</song>
 <comm><ent></ent></comm></div>
 
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/1a37ee8cbf59cee9a7ca15f21d893af8/128x128-000000-50-0-0.jpg" alt=""></f>
+<song artist="Сплин">Танцуй!</song>
+<comm><ent></ent></comm></div>
 
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/967ac8605268db88a1e597394115365d/128x128-000000-50-0-0.jpg" alt=""></f>
+<song artist="Lana Del Rey">Cola</song>
+<comm><ent></ent></comm></div>
 
+<!--P E R E S H E E K-->
 
-<div class="ratee"><f><img class="lazy" data-src="LINKINHERE" alt=""></f>
+<div class="ratee"><f><img src="LINKINHERE" alt=""></f>
 <song artist="ARTIST">TRACK</song>
 <comm><ent></ent></comm></div>
 
-<div class="ratee"><f><img class="lazy" data-src="LINKINHERE" alt=""></f>
+<div class="ratee"><f><img src="LINKINHERE" alt=""></f>
 <song artist="ARTIST">TRACK</song>
 <comm><ent></ent></comm></div>
 
-<div class="ratee"><f><img class="lazy" data-src="LINKINHERE" alt=""></f>
+<div class="ratee"><f><img src="LINKINHERE" alt=""></f>
 <song artist="ARTIST">TRACK</song>
 <comm><ent></ent></comm></div>
 
-<div class="ratee"><f><img class="lazy" data-src="LINKINHERE" alt=""></f>
+<div class="ratee"><f><img src="LINKINHERE" alt=""></f>
 <song artist="ARTIST">TRACK</song>
 <comm><ent></ent></comm></div>
-
-<div class="ratee"><f><img class="lazy" data-src="LINKINHERE" alt=""></f>
-<song artist="ARTIST">TRACK</song>
-<comm><ent></ent></comm></div>
-    <sub3>&nbsp;г.<br>Песен: <span class="all"></span>,&nbsp;</sub3>
+    <sub3><!--&nbsp;г.<br>-->Песен: <span class="all"></span>,&nbsp;</sub3>
 </div>
     <div class="box popa">popa</div>
 
 <div class="redbox"><div class="hed">Обновлений:&nbsp;<span class="changes"></span></div><input type="checkbox"/></div>
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>
 $(function(){
 $("body").each(function(indx, el){
