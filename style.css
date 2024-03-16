@@ -88,7 +88,7 @@ body {
     background-position: 50% !important;
 }
 
-.action {
+/*.action {
 	width: 28px;
 	height: 28px;
 	border-radius: 50%;
@@ -104,27 +104,7 @@ body {
     background-size: 30%;
     -webkit-filter: var(--comm-filter);
             filter: var(--comm-filter);
-}
-.action.one::after {
-	background: url(svg/arrow.down.svg);
-	background-size: 65%;
-}
-.action.two::after {
-	background: url(svg/chevron.down.svg);
-	background-size: 65%;
-}
-.action.three::after {
-	background: url(svg/chevron.compact.down.svg);
-	background-size: 65%;
-}
-.action.more::after {
-	background: url(svg/chevron.forward.2.svg);
-	background-size: 65%;
-	-webkit-transform: rotate(90deg);
-	    -ms-transform: rotate(90deg);
-	        transform: rotate(90deg);
-}
-.action.more {float: right;margin:0 0 0 10px}
+}*/
 
 img {
 	position: relative;
