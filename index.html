@@ -8,11 +8,12 @@
     <title>Плейлист Web</title>
 <style>
 sub2::before {content: "7 Мая 2024"}
-sub3::after {content: "13 ч. 22 мин."}
+sub3::after {content: "13 ч. 27 мин."}
 blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-2119-4ad8-aeab-0dbfe3cfa7c5.jpeg) 50% no-repeat;background-size: 100%}
 </style>
 </head>
 <body>
+	<!--<div class="hat"><input class="filter" type="checkbox"/></div>-->
 	<div class="box head">
 	<!--<div>
 		<div class="action one"></div>
@@ -22,7 +23,29 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
     <sub1>лера</sub1>
     <!--<sub2>Обновления:&nbsp;<span class="changes"></span></sub2>-->
     <sub2>&nbsp;г.</sub2>
-    <play><span class="rated"></span>&nbsp;из&nbsp;<span class="all"></span>&nbsp;послушано</play>
+    <div class="playing">
+<play>
+<label class="play-label"><span class="rated"></span>&nbsp;из&nbsp;<span class="all"></span>&nbsp;послушано<span class="ocenlnew new-indicator"></span></label>
+<label class="isli"><span class="ocenli"></span>&nbsp;«Послушал»</label>
+<label class="isl5"><span class="ocenl5"></span>&nbsp;«Любимых»</label>
+<label class="isl4"><span class="ocenl4"></span>&nbsp;«Нравится»</label>
+<label class="isl3">&nbsp;<span class="ocenl3"></span>&nbsp;«Так себе»</label>
+<label class="isl2"><span class="ocenl2"></span>&nbsp;«Не нравится»</label>
+<label class="isunli"><span class="ocenunli"></span>&nbsp;непрослушанных</label>
+<label class="islnew"><span class="ocenlnew"></span>&nbsp;обновление(я)</label>
+</play>
+
+<div class="filter-menu">
+<input class="li" text="«Послушал»" name="filterbutt" type="radio">
+<input class="l5" text="«Любимое»" name="filterbutt" type="radio">
+<input class="l4" text="«Нравится»" name="filterbutt" type="radio">
+<input class="l3" text="«Так себе»" name="filterbutt" type="radio">
+<input class="l2" text="«Не нравится»" name="filterbutt" type="radio">
+<input class="linon btop" text="Непрослушанные" name="filterbutt" type="radio">
+<input class="lnew" text="Обновления" name="filterbutt" type="radio">
+<input class="alltracks btop" text="Все" name="filterbutt" type="radio" checked>
+</div>
+    </div>
     <div><input style="display:none" type="checkbox" class="desc-more"/>
     <div class="description">На основе телеграмовских твоих упоминаний с февраля 2022. Состоит весь почти из того, чего не слышал до этого. Спасибо, что делишься :)</div></div></div>
     <div class="box body">
@@ -47,11 +70,11 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Нервы">Так как надо</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/61624b0b1e60c0b7924b3b8f2584fc14/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/61624b0b1e60c0b7924b3b8f2584fc14/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="t.A.T.u.">Я сошла с ума</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/69b09ba4dea61e116793bde3bec62dea/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/69b09ba4dea61e116793bde3bec62dea/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Михаил Боярский">Спасибо родная</song>
 <comm><ent>голос у него такой приторный шаловливый - извращенца старого задорного аккуратного, не утратившего осторожность: умение вовремя скрыться для него не проблема, но однако ж любит иногда мироощущать остро</ent></comm></div>
 
@@ -75,18 +98,18 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Дайте танк (!)">Мы</song>
 <comm><ent>сюрреализм и роботы.<br>возможно, ебущиеся</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/dccae3a8f529a131949d2275494ae384/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/dccae3a8f529a131949d2275494ae384/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Валентин Стрыкало">Дешёвые драмы</song>
 <comm><ent>Взрослые травмы у меня больше чувств вызывают.<br>А если уж совсем по части что пахнет моими слезами, так это 92. Недавно услышал, ну а дальше мы с ней как в тексте: как-то встретились и всё., всё.<br><br>Очень люблю крайний альбом</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/1cb8dd4a9140b09e496af97562773859/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/1cb8dd4a9140b09e496af97562773859/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Oxxxymiron">Город под подошвой</song>
 <comm><ent>пропустил я как-то волну хайпа на этот трек, ну да и к лучшему<br><br>👊🤨</ent></comm></div>
 
-<div class="rate l"><f><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoLcMC0N7R8QJpOoDm8W3LbqYmp5YFt7BmoA&usqp=CAU" alt=""></f>
+<div class="rate li"><f><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoLcMC0N7R8QJpOoDm8W3LbqYmp5YFt7BmoA&usqp=CAU" alt=""></f>
 <song artist="Геннадий Хохлов">Белые ночи Усинска</song>
 <comm><ent>обычная песенка, а в голове мысли связанные с тобой</ent></comm></div>
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8266365a39e197415cfe790a862a7a99/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8266365a39e197415cfe790a862a7a99/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Марсель">Предубеждение и Гордость (Концертная версия)</song>
 <comm><ent>забавно слушать это вот сейчас 9 августа да</ent></comm></div>
 
@@ -94,7 +117,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Серебряная свадьба">Черная речка</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/03f728312bcd6d5c14193595cdcd4b4c/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/03f728312bcd6d5c14193595cdcd4b4c/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Михаил Шуфутинский">Саня</song>
 <comm><ent></ent></comm></div>
 
@@ -122,11 +145,11 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Земфира">крым</song>
 <comm><ent>неплохая такая</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/cf842170cfbc89e55a54ae5ad9b5cfbb/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/cf842170cfbc89e55a54ae5ad9b5cfbb/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Pharaoh">Unplugged 2: Love Kills</song>
 <comm><ent>лучшая наверное версия анплагдт,а,,<br><br>пик ахуенности образа, его сочетаемости с творчеством, товарища Фараона, на мой вкус, закончился после MDD в 21-м<br>Эми<i>(и эта эмоциональная отдача на концертах под него!)</i>, Route 333, 1 из Легенд.<br>А нынешний поворот в попсу в двух последних альбиках... Не моё</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/917299c2c997bb384f8845064ec13460/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/917299c2c997bb384f8845064ec13460/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Бумбокс">Жаль</song>
 <comm><ent></ent></comm></div>
 
@@ -138,7 +161,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Theory of a Deadman">Angel</song>
 <comm><ent>go на мейн дороге и беках прикольные<br>а больше сказать нниче не могу</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/6fa67b8b6e93e4668b0a92501c0e0784/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/6fa67b8b6e93e4668b0a92501c0e0784/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Uma2rman">Кажется</song>
 <comm><ent>голос теплый слишком и толиком беззаботный что-ли для подобного текста, не какого-нибудь Аффинажа.<br><br>проигрыши хорошие, гомосексуальные</ent></comm></div>
 
@@ -150,7 +173,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Виктор Салтыков">Улетели листья с тополей</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/99ea6c94c8ede66b6e9844756e99da5f/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/99ea6c94c8ede66b6e9844756e99da5f/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Рок-Острова">Ничего не говори</song>
 <comm><ent>ужас, каждый раз вздрагиваю от вибрации, ставлю на паузу, а это в песне!!!<br>на 1:46</ent></comm></div>
 
@@ -162,7 +185,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Katrina & The Waves">Walking On Sunshine</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/241b9e2cabd830674ca34602e65612f9/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/241b9e2cabd830674ca34602e65612f9/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Бутырка">Шарик</song>
 <comm><ent>мой дедушка фан бутырки. в его машине постоянно играла</ent></comm></div>
 
@@ -202,11 +225,11 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Radiohead">Exit Music (For A Film)</song>
 <comm><ent>впервые услышал её в чёрном заркале, s3e3<br>разумеется понравились и серия, и титровая эта ДЕРЕВЯНКА (павел)🧲</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/dfabd8282de2f3d62e32cd3192267c37/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/dfabd8282de2f3d62e32cd3192267c37/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Шура">Ты не верь слезам</song>
 <comm><ent>шепелявит как юра хован</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/e92a46b7e2132f83a0416b0e4606c131/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/e92a46b7e2132f83a0416b0e4606c131/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Flo Rida">Whistle</song>
 <comm><ent>че так это ОНА?<br>уголёк жестко чувствует вайб хангер геймс майнкрафтпе 2016😎</ent></comm></div>
 
@@ -222,7 +245,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Елена Камбурова">Маленький принц (из к/ф "Пассажир с экватора")</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8348154fc693936f20f004522f91254f/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8348154fc693936f20f004522f91254f/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Михаил Шуфутинский">Пальма де Майорка</song>
 <comm><ent></ent></comm></div>
 
@@ -230,7 +253,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="The Smile">Skrting On The Surface</song>
 <comm><ent>здесь я понял, что не могу ощущать романтику жизни своей.<br>но ведь она есть .?<br><br>расплыться по полу заброшенного здания и плакать о помощи<br><br>полуночный пляж, где ни единой души, смотрю, как луна скользит по глади моря</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/e2065a7d48bb18bec173e25fef814312/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/e2065a7d48bb18bec173e25fef814312/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Песняры">Вологда</song>
 <comm><ent></ent></comm></div>
 
@@ -266,15 +289,15 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Найк Борзов">Последняя песня</song>
 <comm><ent>образы, ОБРАЗЫ</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/7bd78e07172d19014af1124fcb9cd21b/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/7bd78e07172d19014af1124fcb9cd21b/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Валерий Леонтьев">Казанова</song>
 <comm><ent>как на подобное реагировать 😧</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/1c9b79642bc63e3944ba0d214255ae59/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/1c9b79642bc63e3944ba0d214255ae59/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Anacondaz">Твоему новому парню</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/9215d8b5fdd5ba1a73725184d326b119/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/9215d8b5fdd5ba1a73725184d326b119/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Бумбокс">Вахтерам</song>
 <comm><ent>ЧИУА УА<br>не знаю, не слыш... да, слышал.<br>есть в ней особая для меня романтика начала десятых<br><br>группу бумбокс не катирую</ent></comm></div>
 
@@ -282,7 +305,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Нэнси">Дым сигарет с ментолом</song>
 <comm><ent>проигрыш легендарный.<br>под настроение</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/7c1237e3312dff8c41261bf5962409db/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/7c1237e3312dff8c41261bf5962409db/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Сектор Газа">Бомж</song>
 <comm><ent>сука бомж я уронил на асфальт телефон представляешь</ent></comm></div>
 
@@ -290,7 +313,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Britney Spears">...Baby One More Time</song>
 <comm><ent>интересно она чможет закричать как тирекс ну или гадза</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/dc71e4acd1dc5aada2f144b898e35ba4/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/dc71e4acd1dc5aada2f144b898e35ba4/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Катя Лель">Муси-пуси</song>
 <comm><ent></ent></comm></div>
 
@@ -302,7 +325,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Кино">Саша</song>
 <comm><ent>чето земфиру вспомнил</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/40590c9a35866efc33a2b83db54e866d/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/40590c9a35866efc33a2b83db54e866d/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Кино">Саша</song>
 <comm><ent>вайб музыкантов бременских?</ent></comm></div>
 
@@ -326,7 +349,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Дайте танк (!)">Обиды</song>
 <comm><ent>с него вот я например эволюционировал до уровня хейтера группы этой сраной<br><br>UPD: со второго прослушивания уже врубаюсь понемногу</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/c276ebb317b98d987389e17ef7111770/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/c276ebb317b98d987389e17ef7111770/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Дайте танк (!)">Люди</song>
 <comm><ent></ent></comm></div>
 
@@ -350,7 +373,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Гречка">Анимешница</song>
 <comm><ent>сведос говно, голос неприятный, слушать невозможно автору смерти мне понравилось</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f3c0e43c91e9125eb2891735db0b8dcd/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f3c0e43c91e9125eb2891735db0b8dcd/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Стас Михайлов">Без тебя</song>
 <comm><ent></ent></comm></div>
 
@@ -362,11 +385,11 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Владимир Клявин">Планы</song>
 <comm><ent>слышу его, представляю летова<br>а еще мотив что-то напоминает...<br><br>а Клявмн не пробовал себя в дез метале?</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8a7c544ce76eee67636895d79ef68c69/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8a7c544ce76eee67636895d79ef68c69/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Николай Караченцов">Ты меня на рассвете разбудишь</song>
 <comm><ent>я тебя не забуду</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/c2cac930150aff4972c6e7c320d6b6b2/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/c2cac930150aff4972c6e7c320d6b6b2/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Noize MC">Моё море</song>
 <comm><ent></ent></comm></div>
 
@@ -386,7 +409,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Нервы">Вороны</song>
 <comm><ent>пиздец. хочется срастись со стеной этой сраной остановки<br>и меня от всего в очередной раз тошнит не хочу видеть не хочу ощущать больше ничего</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8748e5b3f51b73df86af1b177a226f28/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8748e5b3f51b73df86af1b177a226f28/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Валентин Стрыкало">Знаешь, Таня</song>
 <comm><ent>классика сплю я с пушкою под подушкою</ent></comm></div>
 
@@ -414,7 +437,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Свидание">Забудь в парке</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/dfa9363d1ff6372e0e321dbc9da46ec9/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/dfa9363d1ff6372e0e321dbc9da46ec9/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="The Mamas & The Papas">California Dreamin' (Single Version)</song>
 <comm><ent></ent></comm></div>
 
@@ -422,7 +445,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Reamonn">Tonight</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/dccae3a8f529a131949d2275494ae384/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/dccae3a8f529a131949d2275494ae384/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Валентин Стрыкало">Рустем</song>
 <comm><ent></ent></comm></div>
 
@@ -430,11 +453,11 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Юрий Визбор">Милая моя</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/33ebeb5bea8872f0b937a8aa2635a41b/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/33ebeb5bea8872f0b937a8aa2635a41b/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="ЩЕНКИ">Лакост</song>
 <comm><ent>до слов про шлюх и ёбырей складывалась другая картинка, более нелепо-смешная на мой взгляд эх</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/64004ba994ddb202f8c6f8fc8ecdc77f/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/64004ba994ddb202f8c6f8fc8ecdc77f/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Аида Ведищева">Колыбельная медведицы (Из м/ф "Умка")</song>
 <comm><ent></ent></comm></div>
 
@@ -450,11 +473,11 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Twenty One Pilots">Heathens</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/3ad6afef41e7b8780c198733301778af/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/3ad6afef41e7b8780c198733301778af/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Katy Perry">Ur So Gay</song>
 <comm><ent>сподвигает читать Декарта</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/ddb510e4a3264f2893ac2273080d3227/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/ddb510e4a3264f2893ac2273080d3227/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Александр Буйнов">Если у вас нету тети</song>
 <comm><ent>НАКОНЕЦ ПОНЯЛ ОТСЫЛКУ К СТРОЧКЕ ЕСЛИ У ВАС НЕТ СОБАКИ господина лиды</ent></comm></div>
 
@@ -462,7 +485,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Tyler, The Creator, Kali Uchis">See You Again (feat. Kali Uchis)</song>
 <comm><ent>красивая🙂<br>нравится инструментал</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/406f99fbbb8f44475d4507e373e46f5c/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/406f99fbbb8f44475d4507e373e46f5c/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="XXXTentacion">Revenge</song>
 <comm><ent></ent></comm></div>
 
@@ -470,11 +493,11 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="ПОРНОФИЛЬМЫ">Прости. Прощай. Привет</song>
 <comm><ent>идеально подобрала <s>завершающую</s>(😬) композицию, браво!</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/e25f5d3c073a2a30be1bbcfec8bdff7c/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/e25f5d3c073a2a30be1bbcfec8bdff7c/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Джизус">ТЫ НИЧЕГО НЕ ПОНЯЛА</song>
 <comm><ent>инцест наверное не одобряю</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/124f5865cfe36747ad175e221be07b9f/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/124f5865cfe36747ad175e221be07b9f/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Татьяна Буланова">Не плачь</song>
 <comm><ent>как-то так получилось, что перешагивания со шпал идеально совпадают с тактом 🛀<br><br>может банально, но вайбозависящая</ent></comm></div>
 
@@ -482,7 +505,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Mikhail Krug">Фраер</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/084822874af3f518a42b9e755aa0003c/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/084822874af3f518a42b9e755aa0003c/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="kostromin">Моя голова винтом</song>
 <comm><ent>ожидал издесь чего угодно, но не этого<br>знаешь, стайл сектора газа, носкова, киша... об этом намекали название, даже обложка кислотная аааа</ent></comm></div>
 
@@ -490,15 +513,15 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Daniel Powter">Bad Day</song>
 <comm><ent>в настроение не попала</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/e1592b9287327fd23d1534b5a3fa63fd/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/e1592b9287327fd23d1534b5a3fa63fd/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Scally Milano, 163Onmyneck, FEARMUCH">Кид Кади</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f4512b24e2f4fe54fa76e67eb223aa11/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f4512b24e2f4fe54fa76e67eb223aa11/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Sia">Chandelier</song>
 <comm><ent>я вот так же ору, когда стопа решает ебашить налегке жить своей жизнью любить обнимать углы больные<br><br>классикс</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/0c22a6588debd2b699f60842aeb72396/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/0c22a6588debd2b699f60842aeb72396/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Selena Gomez">Everything is Not What it Seems (Theme Song to Wizards of Waverly Place)</song>
 <comm><ent>это что-то со времен лентяева и могучих рейнджеров??<br><br>слышал она сдохла</ent></comm></div>
 
@@ -514,11 +537,11 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Завтраккусто">Кокаинетка</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/2b46db633b5c9c1e56dcce945f032dbd/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/2b46db633b5c9c1e56dcce945f032dbd/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Mikhail Krug">Девочка-пай</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/815265d20df322fc9d27bc43ea70e7de/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/815265d20df322fc9d27bc43ea70e7de/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Николай Носков">Это здорово</song>
 <comm><ent></ent></comm></div>
 
@@ -526,7 +549,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="alt-J">Intro</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8748e5b3f51b73df86af1b177a226f28/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8748e5b3f51b73df86af1b177a226f28/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Валентин Стрыкало">Преждевременное семяизвержение</song>
 <comm><ent><img src="https://imageup.ru/img164/4496259/img_20230825-225033_bromite.jpg" alt=""></ent></comm></div>
 
@@ -538,7 +561,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Король и Шут">Ром</song>
 <comm><ent>и опять этот бездарная попытка рассказать историю: ляля пришел забрал он был таков суров ковров ушел говнов<br>ну кринж<br><br><img src="https://imageup.ru/img52/4605612/img_20231105-003355.jpg" alt="">НУ ЧТО БЫ Я ДЕЛАЛ БЕЗ ПОНИМАНИЯ ТАКИХ ОТСЫЛОК</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/e5925065cdb1cefbc3bd75af4a1f1801/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/e5925065cdb1cefbc3bd75af4a1f1801/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Radiohead">Everything In Its Right Place</song>
 <comm><ent>слышал, конечно слышал её раньше</ent></comm></div>
 
@@ -550,7 +573,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Nick Cave & The Bad Seeds">O Children</song>
 <comm><ent>как грустно<br>погружаешься в атмосферу сцены с головой</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f6eb38e5f1d70e6af48fdc7b10d426c1/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f6eb38e5f1d70e6af48fdc7b10d426c1/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Кино">Мама-анархия</song>
 <comm><ent></ent></comm></div>
 
@@ -558,7 +581,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Михаил Боярский">Зеленоглазое такси</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/5bcd1a23910d87da1a46ca953593229b/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/5bcd1a23910d87da1a46ca953593229b/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Face">Лиза</song>
 <comm><ent>лиза иди нахуй (молодец)</ent></comm></div>
 
@@ -570,11 +593,11 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Сектор Газа">Лирика</song>
 <comm><ent>типа...<br><br>зачем он вообще пытается петь</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/bd8f92c6d4f72045175d697c84275c50/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/bd8f92c6d4f72045175d697c84275c50/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Сплин">Романс</song>
 <comm><ent>хочу жить в квартире со сломанными часами и протухшими календарями<br><br>и каково это селиться над метро</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/a3dff8783205a34f5715af56a91d1350/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/a3dff8783205a34f5715af56a91d1350/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Агата Кристи">Опиум для никого</song>
 <comm><ent>я мажу попу вазелином😶<br>простите...<br><br>знаешь, это конечно не Носков, но что-то странное есть! и клип такой ... классный<br>скорее понравилась</ent></comm></div>
 
@@ -614,7 +637,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Sam Smith">Stay With Me</song>
 <comm><ent>они все у него одинаковые?, даже не понял, что сейчас другая играла</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8442e9ac0227a07b00c9dfd0ec00032d/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8442e9ac0227a07b00c9dfd0ec00032d/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Hozier">Take Me To Church</song>
 <comm><ent>базовая база</ent></comm></div>
 
@@ -626,7 +649,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="John Legend">All of Me</song>
 <comm><ent>ну меня вообще такое не цепляет 😭😭😭<br><br>мне он просто не нравится из-за музыкальных приёмов, которые, порой, криповые</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f775144a9c375ada83e1e014920a4d9a/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/f775144a9c375ada83e1e014920a4d9a/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="MAC MILLER">Everybody</song>
 <comm><ent>тоже такая приятная, спокойная, красивая<br>на любителя, я - нет<br>посмотрю, распробую</ent></comm></div>
 
@@ -638,7 +661,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="ПОРНОФИЛЬМЫ">Я так соскучился</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/1c0392005b0d669354868222bc83d2bd/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/1c0392005b0d669354868222bc83d2bd/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="ПОРНОФИЛЬМЫ">Это пройдёт</song>
 <comm><ent>влажны фантазии</ent></comm></div>
 
@@ -678,7 +701,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Lana Del Rey">Doin' Time</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/537f1cef9034d1baff03bad5da8213ee/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/537f1cef9034d1baff03bad5da8213ee/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Vance Joy">Riptide</song>
 <comm><ent>для фона подходит хорошо</ent></comm></div>
 
@@ -694,7 +717,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Ben E. King">Stand by Me</song>
 <comm><ent>джаз? ненавидеть</ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/71671b023585cc8e8d9c27c02ac98117/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/71671b023585cc8e8d9c27c02ac98117/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Интонация">Пускай</song>
 <comm><ent>тот случай знакомой песни из детства, которая могла бы что-нибудь вызывать, но нет</ent></comm></div>
 
@@ -706,7 +729,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="PIZZA">Назад</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/4b9d095d48e53d2fdc6220a18790554f/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/4b9d095d48e53d2fdc6220a18790554f/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="PIZZA">Фары</song>
 <comm><ent>хорошая, конечно слышал её.<br>есть песни, которые ты слушал в детстве, и моменты из них помнишь до сих пор. вот здесь «проолеетят» на бэк вокале прям въелось.</ent></comm></div>
 
@@ -718,7 +741,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="Noize MC">Любимый цвет</song>
 <comm><ent></ent></comm></div>
 
-<div class="rate l"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/2c3e9f74bde817aa15c7327149290e4a/128x128-000000-50-0-0.jpg" alt=""></f>
+<div class="rate li"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/2c3e9f74bde817aa15c7327149290e4a/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Бумбокс">Та4то</song>
 <comm><ent>по крайней мере лучшее из всего что было</ent></comm></div>
 
@@ -810,6 +833,10 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <song artist="The Killers">Mr. Brightside</song>
 <comm><ent></ent></comm></div>
 
+<div class="rate"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/a3e614e4d6ad4b9b58bd41e4b618fe69/128x128-000000-50-0-0.jpg" alt=""></f>
+<song artist="Роман Рябцев">Странные Танцы</song>
+<comm><ent></ent></comm></div>
+
 <div class="rate l2"><f><img src="https://e-cdns-images.dzcdn.net/images/cover/8f0c435b36269064f2894c8ebb9a9b49/128x128-000000-50-0-0.jpg" alt=""></f>
 <song artist="Noize MC">Ты не считаешь</song>
 <comm><ent>кал какой-то куколдистский в тексте.<br>ну припев неплохой, нудные куплеты</ent></comm></div>
@@ -895,7 +922,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 </div>
     <div class="box popa">popa</div>
 
-<div class="redbox"><div class="hed">Обновлений:&nbsp;<span class="changes"></span></div><input type="checkbox"/></div>
+<!--<div class="redbox"><div class="hed">Обновлений:&nbsp;<span class="changes"></span></div><input type="checkbox"/></div>-->
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>
@@ -904,6 +931,14 @@ $("body").each(function(indx, el){
 $(".rated",el).text($('div[class^="rate l"]',el).length)
 $(".all",el).text($('.rate',el).length)
 $(".changes",el).text($('.rate.n',el).length)
+
+$(".ocenli",el).text($('[class^="rate li"]',el).length)
+$(".ocenl5",el).text($('[class^="rate l5"]',el).length)
+$(".ocenl4",el).text($('[class^="rate l4"]',el).length)
+$(".ocenl3",el).text($('[class^="rate l3"]',el).length)
+$(".ocenl2",el).text($('[class^="rate l2"]',el).length)
+$(".ocenunli",el).text($('[class$="rate"]',el).length)
+$(".ocenlnew",el).text($('[class$=" n"]',el).length)
 });});
 </script>
 </html>

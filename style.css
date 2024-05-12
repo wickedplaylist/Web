@@ -1,5 +1,6 @@
 :root {
 --background: #1f1f1f;
+--header-bg: #2e2e2e;
 --action-background: hsla(0,0%,100%,.05);
 --cover-background: #323232;
 --cover-filter: opacity(.16) invert(96%) sepia(3%) saturate(540%) hue-rotate(201deg) brightness(99%) contrast(94%);
@@ -7,25 +8,26 @@
 --sub1-color: #fa586a;
 --sub2-color: #ffffffa3;
 --exclipt-filter: invert(1) opacity(.64);
---play-background: #ffffff0d;
+--play-background-pressed: #ff7183;
+--filter-buttton-bg: #28282880;
+--filter-icons-invert: invert(1);
 --description-color: #ffffffa3;
---more: #ffffffeb;
 --block-background: #232323;
 --block-hover: #a60012;
 --new: hsla(0,0%,100%,.64);
 --new-background: hsla(0,0%,100%,.06);
---track: #ffffffeb;
 --artist: #ffffffa3;
 --comm-filter: invert(39%) sepia(96%) saturate(492%) hue-rotate(306deg) brightness(105%) contrast(96%);
---ent-color: #ffffffeb;
 --ent-background: rgba(40,40,40,.7);
---ent-shadows: inset 0 0 0 1px hsla(0,0%,100%,.1), 0 8px 40px rgba(0,0,0,.5);
+--ent-border-top: hsla(0,0%,100%,.1);
+--ent-shadows: inset 0 0 0 1px var(--ent-border-top), 0 8px 40px rgba(0,0,0,.5);
 --sub3-color: #ffffffa3;
 --popa-background: #2b2b2b;
 }
 @media (prefers-color-scheme: light) {
 :root {
 --background: white;
+--header-bg: white;
 --action-background: rgba(0,0,0,.05);
 --cover-background: #ebebeb;
 --cover-filter: opacity(.18) invert(23%) sepia(11%) saturate(384%) hue-rotate(202deg) brightness(93%) contrast(93%);
@@ -33,31 +35,63 @@
 --sub1-color: #d60017;
 --sub2-color: #0000008f;
 --exclipt-filter: opacity(.56);
---play-background: #0000000d;
+--play-background-pressed: #b00;
+--filter-buttton-bg: #f5f5f57a;
+--filter-icons-invert: none;
 --description-color: #0000008f;
---more: #000000e0;
 --block-background: rgba(0,0,0,.015);
 --block-hover: #d60017;
 --new: rgba(0,0,0,.56);
 --new-background: rgba(0,0,0,.06);
---track: #000000e0;
 --artist: #0000008f;
---comm-filter: invert(11%) sepia(76%) saturate(6460%) hue-rotate(348deg) brightness(89%) contrast(109%);;
---ent-color: #000000e0;
+--comm-filter: invert(11%) sepia(76%) saturate(6460%) hue-rotate(348deg) brightness(89%) contrast(109%);
 --ent-background: rgba(246,246,246, .72);
---ent-shadows: inset 0 0 0 1px rgba(0,0,0,.15), 0 8px 40px rgba(0,0,0,.25);
+--ent-border-top: rgba(0,0,0,.15);
+--ent-shadows: inset 0 0 0 1px var(--ent-border-top), 0 8px 40px rgba(0,0,0,.25);
 --sub3-color: #0000008f;
 --popa-background: #f2f2f2;
 }
 }
 
 play, .rate, song, song::after, comm {-webkit-transition: .2s;-o-transition: .2s;transition: .2s;}
+input {margin: 0; padding: 0; -webkit-appearance: none;-moz-appearance: none;appearance: none}
+.filter-menu input::after, .redbox input, .action::after, sub2::after, play::before, comm::after, f::before {
+    background-repeat: no-repeat !important;
+    background-position: 50% !important;
+}
+
+/*     H E A D E R       */
+.hat {
+	box-sizing: border-box;
+	position: sticky;
+	display: flex;
+	align-items: center;
+	top: 0; left: 0;
+	width: 100%;
+	height: 44px;
+	padding: 0 11px;/*12 лефт*/
+	background-color: var(--header-bg);
+	box-shadow: 0 1px 2px rgba(0,0,0,.1);
+	z-index: 4;
+}
+/*input.filter {
+	display: inline-flex;
+	align-items: center;
+	font-weight: 500;
+	//padding: 0 12px;
+	color: var(--sub1-color);
+	//height: 28px;
+	//min-width: 64px;
+}*/
+
+
+
 body {
     font-family: -apple-system,BlinkMacSystemFont,Apple Color Emoji,SF Pro,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
     font-size: 13px;
     margin: 0;
     background-color: var(--background);
-    color: white;
+    color: var(--sub0-color);
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -78,14 +112,10 @@ body {
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 	padding-top: 20px;
-	padding-bottom: 32px;
+	padding-bottom: 32px; /*32*/
 }
-.box.body > .rate:first-child {
-	margin-top: 16px;
-}
-.redbox input, .action::after, sub2::after, play::before, comm::after, f::before {
-    background-repeat: no-repeat !important;
-    background-position: 50% !important;
+.box.body {
+	margin-top: 16px; /*16*/
 }
 
 /*.action {
@@ -137,6 +167,7 @@ f::before {
 	opacity: .4
 }
 f.album::before {
+	display: none;
 	background: url(svg/music.svg) no-repeat;
 	background-size: auto 100%;
 	-webkit-filter: var(--cover-filter);
@@ -201,17 +232,17 @@ sub0 {
 	font-size: 26px;
 	font-weight: 600;
 	margin-bottom: -2px;
-	color: var(--sub0-color)
 }
 sub1 {
 	font-size: 26px;
 	padding: 5px 0;
 	margin: -5px 0;
-	color: var(--sub1-color)
+	color: var(--sub1-color);
+	color: var(--sub2-color)
 }
-sub1:hover {
+/*sub1:hover {
 	text-decoration: underline
-}
+}*/
 sub2 {
 	font-size: 12px;
 	margin-top: 4px;
@@ -227,8 +258,7 @@ sub2 {
 	background-size: auto 100%;
 	filter: var(--exclipt-filter);
 }*/
-play {
-	font-weight: 600;
+.playing, play {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -238,24 +268,23 @@ play {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-	min-height: 28px;
+	padding-top: 18px;
+	position: relative;
+}
+play {
+	font-weight: 600;
+	height: 28px;
 	min-width: 127px;
-	margin: 18px auto 0;
 	padding: 0 12px;
 	border-radius: 6px;
-	color: var(--sub1-color);
-	background-color: var(--play-background);
+	color: white;
+	background-color: #d60017;
 	-webkit-transition: background-color .2s;
 	-o-transition: background-color .2s;
 	transition: background-color .2s;
 }
-play:hover {
-	color: white;
-	background-color: #b00
-}
-play:hover::before {
-	-webkit-filter: invert(1);
-	        filter: invert(1)
+play:hover, play:has(+ .filter-menu:hover) {
+	background-color: var(--play-background-pressed);
 }
 play::before {
 	content: "";
@@ -264,10 +293,61 @@ play::before {
 	margin: 0 2px 2px 0;
 	background: url(svg/play.svg);
 	background-size: auto 100% !important;
-	-webkit-filter: var(--comm-filter);
-	        filter: var(--comm-filter);
+	-webkit-filter: invert(1);
+	        filter: invert(1)
 }
-play + div {
+.playing:has([class^="l"]:checked) play::before {
+	height: 16px;
+	margin: 0 2px 0 0;
+}
+.new-indicator {
+	display: none;
+	box-sizing: border-box;
+	position: absolute;
+	top: -8px; right: -8px;
+	text-align: center;
+	font-size: 11px;
+	font-weight: 600;
+	line-height: 14px;
+	height: 16px;
+	min-width: 16px;
+	padding: 1px 4px;
+	border-radius: 8px;
+	color: white;
+	background-color: black;
+	filter: var(--filter-icons-invert);
+}
+/*УДАЛЕННАЯ КНОПКА ВОЗЛЕ ПЛЕЕРА*/
+/*.filter-button {
+	position: relative;
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	margin-left: 12px;
+	background-color: var(--filter-buttton-bg);
+}
+.filter-button::before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+    background-color: var(--action-background);
+}
+.filter-button::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+    background-size: auto 100%;
+    background: url("svg/more.svg");
+    -webkit-filter: var(--comm-filter);
+            filter: var(--comm-filter);
+}
+*/
+
+.playing + div {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -305,7 +385,6 @@ input.desc-more {
 	text-align: right;
 	margin: 0;
 	padding: 1px 0 1px 31.5px;
-	color: var(--more);
 	background: -o-linear-gradient(left, transparent, var(--background) 32px);
 	background: linear-gradient(to right, transparent, var(--background) 32px);
 }
@@ -328,7 +407,6 @@ input.desc-more:checked {
     position: relative;
     border-radius: 6px;
     padding: 7px;
-    color: var(--track);
 }
 .n::before {
 	content: "";
@@ -341,7 +419,7 @@ input.desc-more:checked {
     background-color: var(--new);
 }
 .rate:nth-child(odd) {background-color: var(--block-background)}
-.rate:has(comm:hover) {background-color: var(--block-hover)}
+.rate:has(comm:hover) {background-color: var(--block-hover) !important}
 //.rate:has(comm:hover)/*, .rate.n*/ {background-color: var(--new-background)}
 .rate f {
 	margin-right: 12px;
@@ -370,9 +448,9 @@ comm {
     margin-left: auto;
     border-radius: 50%;
 }
-comm:has(ent) {background-color: hsla(0,0%,50%,.35)}
+comm:has(ent) {background-color: hsla(0,0%,50%,.3)}
 comm:has(ent:empty), comm:hover {background-color: transparent}
-comm::after {
+comm::after, .filter-menu input::after {
 	content: "";
 	display: block;
 	width: 100%;
@@ -383,14 +461,14 @@ comm::after {
 }
 comm:hover::after {-webkit-filter: invert(1);filter: invert(1)}
 
-.rate.l comm::after {background: url("svg/checkmark.svg")}
-.rate.l5 comm::after {background: url("svg/heart.fill.svg")}
-.rate.l4 comm::after {background: url("svg/hand.thumbsup.fill.svg")}
-.rate.l3 comm::after {background: url("svg/smiley.svg")}
-.rate.l2 comm::after {background: url("svg/hand.thumbsdown.svg")}
+.rate.li comm::after, .filter-menu .li::after, .playing:has(.li:checked) play::before {background: url("svg/checkmark.svg")}
+.rate.l5 comm::after, .filter-menu .l5::after, .playing:has(.l5:checked) play::before {background: url("svg/heart.fill.svg")}
+.rate.l4 comm::after, .filter-menu .l4::after, .playing:has(.l4:checked) play::before {background: url("svg/hand.thumbsup.fill.svg")}
+.rate.l3 comm::after, .filter-menu .l3::after, .playing:has(.l3:checked) play::before {background: url("svg/smiley.svg")}
+.rate.l2 comm::after, .filter-menu .l2::after, .playing:has(.l2:checked) play::before {background: url("svg/hand.thumbsdown.svg")}
 
 .ratee, div[class$="rate"] comm, ent:empty {display: none !important}
-ent {
+ent, .filter-menu {
     display: none;
 	position: absolute;
 	right: 4px; top: 66%;
@@ -402,7 +480,6 @@ ent {
 	        backdrop-filter: blur(60px) saturate(210%);
 	-webkit-box-shadow: var(--ent-shadows);
 	        box-shadow: var(--ent-shadows);
-	color: var(--ent-color);
 	z-index: 2;
 }
 comm:hover ent {
@@ -442,6 +519,7 @@ sub3 {
 	        align-items: center;
 	font-size: 11px;
 	font-weight: 500;
+	text-align: center;
 	width: calc(100% - 60px);
 	margin: 0 auto;
 	padding: 12px 30px;
@@ -459,24 +537,114 @@ sub3 {
 	color: white;
 /*	padding: 7px 0;*/
 }
-.box.body:has(.n) ~ .redbox {
+.box.body:has(.rate.n) ~ .redbox {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 }
 .redbox input {
-	-webkit-appearance: none;
-	   -moz-appearance: none;
-	        appearance: none;
 	position: absolute;
-	top: calc(50% - 15px);
+	top: calc(50% - 17px);
+	/*top: 0;*/
 	right: 0;
 	width: 10px;
-	height: 10px;
+	height: 14px;
 	margin: 10px;
 	background: url(svg/close.svg);
 	background-size: 100%;
 }
 .redbox:has(input:checked) {
 	display: none !important;
+}
+
+
+
+
+play:hover + .filter-menu, .filter-menu:hover, body:has([class$=" n"]) .new-indicator {display: block}
+
+.filter-menu {
+	display: none;
+	position: absolute;
+	overflow: hidden;
+	bottom: 31px; left: 45%; top: auto;
+	padding: 0;
+	margin: 0;
+	width: 185px;
+	z-index: 3;
+}
+.filter-menu input {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	height: 32px;
+	width: 100%;
+	padding: 0 10px;
+	border-top: 0.5px solid var(--ent-border-top);
+	color: var(--sub0-color);
+}
+.filter-menu input::before {
+	content: attr(text);
+	white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+}
+.filter-menu input::after {
+	content: "";
+	display: block;
+	width: 16px; min-width: 16px;
+	height: 16px;
+	margin-left: 5px;
+	background-size: auto 100% !important;
+	filter: var(--filter-icons-invert);
+}
+.filter-menu input:checked {
+	color: var(--sub1-color)
+}
+.filter-menu input:checked::after {
+	-webkit-filter: var(--comm-filter);
+            filter: var(--comm-filter);
+}
+.filter-menu .linon::after, .playing:has(.linon:checked) play::before {background: url("svg/play.slash.fill.svg")}
+.filter-menu .lnew::after, .playing:has(.lnew:checked) play::before {
+	width: 6px; min-width: 6px;
+    height: 6px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: black;
+}
+.filter-menu input:first-child {border-top: none}
+.filter-menu input.alltracks::after, input.lnew {display: none}
+body:has([class$=" n"]) input.lnew {display: flex}
+.filter-menu .btop {border-top-width: 6.5px; height: 38px}
+.filter-menu input:hover {
+	background-color: var(--action-background);
+}
+
+/*БЛОК С ВОЗДЕЙСТВИЕМ НА play*/
+play [class^="is"] {display: none}
+.playing:has([class^="l"]:checked) .play-label {display: none}
+.playing:has(.li:checked) .isli,
+.playing:has(.l5:checked) .isl5,
+.playing:has(.l4:checked) .isl4,
+.playing:has(.l3:checked) .isl3,
+.playing:has(.l2:checked) .isl2,
+.playing:has(.linon:checked) .isunli,
+.playing:has(.lnew:checked) .islnew {display: block}
+
+
+/*БЛОК С ВОЗДЕЙСТВИЕМ НА ЭЛЕМЕНТЫ ТРЕКОВ*/
+.box.head:has([class^="l"]:checked) + .box.body .rate {display: none; background-color: transparent}
+.box.head:has(.l5:checked) + .box.body .rate.l5,
+.box.head:has(.l4:checked) + .box.body .rate.l4,
+.box.head:has(.l3:checked) + .box.body .rate.l3,
+.box.head:has(.l2:checked) + .box.body .rate.l2,
+.box.head:has(.li:checked) + .box.body .rate.li,
+.box.head:has(.linon:checked) + .box.body [class$="rate"],
+.box.head:has(.lnew:checked) + .box.body [class$=" n"]
+{
+	display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
 }
