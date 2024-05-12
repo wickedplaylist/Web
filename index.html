@@ -23,8 +23,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
     <sub1>лера</sub1>
     <!--<sub2>Обновления:&nbsp;<span class="changes"></span></sub2>-->
     <sub2>&nbsp;г.</sub2>
-    <div class="playing">
-<play>
+    <div class="playing"><play>
 <label class="play-label"><span class="rated"></span>&nbsp;из&nbsp;<span class="all"></span>&nbsp;послушано<span class="ocenlnew new-indicator"></span></label>
 <label class="isli"><span class="ocenli"></span>&nbsp;«Послушал»</label>
 <label class="isl5"><span class="ocenl5"></span>&nbsp;«Любимых»</label>
@@ -32,9 +31,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <label class="isl3">&nbsp;<span class="ocenl3"></span>&nbsp;«Так себе»</label>
 <label class="isl2"><span class="ocenl2"></span>&nbsp;«Не нравится»</label>
 <label class="isunli"><span class="ocenunli"></span>&nbsp;непрослушанных</label>
-<label class="islnew"><span class="ocenlnew"></span>&nbsp;обновление(я)</label>
-</play>
-
+<label class="islnew"><span class="ocenlnew"></span>&nbsp;обновление(я)</label></play>
 <div class="filter-menu">
 <input class="li" text="«Послушал»" name="filterbutt" type="radio">
 <input class="l5" text="«Любимое»" name="filterbutt" type="radio">
@@ -43,9 +40,8 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <input class="l2" text="«Не нравится»" name="filterbutt" type="radio">
 <input class="linon btop" text="Непрослушанные" name="filterbutt" type="radio">
 <input class="lnew" text="Обновления" name="filterbutt" type="radio">
-<input class="alltracks btop" text="Все" name="filterbutt" type="radio" checked>
+<input class="alltracks btop" text="Все" name="filterbutt" type="radio" checked></div>
 </div>
-    </div>
     <div><input style="display:none" type="checkbox" class="desc-more"/>
     <div class="description">На основе телеграмовских твоих упоминаний с февраля 2022. Состоит весь почти из того, чего не слышал до этого. Спасибо, что делишься :)</div></div></div>
     <div class="box body">
@@ -931,7 +927,6 @@ $("body").each(function(indx, el){
 $(".rated",el).text($('div[class^="rate l"]',el).length)
 $(".all",el).text($('.rate',el).length)
 $(".changes",el).text($('.rate.n',el).length)
-
 $(".ocenli",el).text($('[class^="rate li"]',el).length)
 $(".ocenl5",el).text($('[class^="rate l5"]',el).length)
 $(".ocenl4",el).text($('[class^="rate l4"]',el).length)
