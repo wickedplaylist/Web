@@ -62,16 +62,22 @@ input {margin: 0; padding: 0; -webkit-appearance: none;-moz-appearance: none;app
 
 /*     H E A D E R       */
 .hat {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	position: sticky;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	top: 0; left: 0;
 	width: 100%;
 	height: 44px;
 	padding: 0 11px;/*12 лефт*/
 	background-color: var(--header-bg);
-	box-shadow: 0 1px 2px rgba(0,0,0,.1);
+	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.1);
+	        box-shadow: 0 1px 2px rgba(0,0,0,.1);
 	z-index: 4;
 }
 /*input.filter {
@@ -302,7 +308,8 @@ play::before {
 }
 .new-indicator {
 	display: none;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	position: absolute;
 	top: -8px; right: -8px;
 	text-align: center;
@@ -315,7 +322,8 @@ play::before {
 	border-radius: 8px;
 	color: white;
 	background-color: black;
-	filter: var(--filter-icons-invert);
+	-webkit-filter: var(--filter-icons-invert);
+	        filter: var(--filter-icons-invert);
 }
 /*УДАЛЕННАЯ КНОПКА ВОЗЛЕ ПЛЕЕРА*/
 /*.filter-button {
@@ -573,10 +581,17 @@ play:hover + .filter-menu, .filter-menu:hover, body:has([class$=" n"]) .new-indi
 	z-index: 3;
 }
 .filter-menu input {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	box-sizing: border-box;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	height: 32px;
 	width: 100%;
 	padding: 0 10px;
@@ -597,7 +612,8 @@ play:hover + .filter-menu, .filter-menu:hover, body:has([class$=" n"]) .new-indi
 	height: 16px;
 	margin-left: 5px;
 	background-size: auto 100% !important;
-	filter: var(--filter-icons-invert);
+	-webkit-filter: var(--filter-icons-invert);
+	        filter: var(--filter-icons-invert);
 }
 .filter-menu input:checked {
 	color: var(--sub1-color)
@@ -616,7 +632,7 @@ play:hover + .filter-menu, .filter-menu:hover, body:has([class$=" n"]) .new-indi
 }
 .filter-menu input:first-child {border-top: none}
 .filter-menu input.alltracks::after, input.lnew {display: none}
-body:has([class$=" n"]) input.lnew {display: flex}
+body:has([class$=" n"]) input.lnew {display: -webkit-box;display: -ms-flexbox;display: flex}
 .filter-menu .btop {border-top-width: 6.5px; height: 38px}
 .filter-menu input:hover {
 	background-color: var(--action-background);
