@@ -1,0 +1,72 @@
+:root {
+--wideboxheadbg: rgba(235,235,245,.03);
+
+--album-deskwh: 192px;
+}
+@media (prefers-color-scheme: light) {
+:root {
+--wideboxheadbg: rgba(60,60,67,.03);
+}
+}
+
+body {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 440px auto;
+	grid-template-columns: 440px auto;
+	-ms-grid-rows: 100dvh;
+	grid-template-rows: 100dvh;
+	    grid-template-areas: "head body";
+}
+.box.head {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+	overflow-y: scroll;
+	display: -ms-grid;
+	display: grid;
+	grid-area: head;
+	gap: 8px;
+	-ms-grid-columns: var(--album-deskwh) 8px auto;
+	grid-template-columns: var(--album-deskwh) auto;
+	-ms-grid-rows: var(--album-deskwh) 8px auto;
+	grid-template-rows: var(--album-deskwh) auto;
+	    grid-template-areas:
+	"album subs"
+	"desc desc";
+	padding-bottom: 20px;
+	background-color: var(--wideboxheadbg);
+	border-right: 1px solid var(--ent-border-top);
+}
+.box.body {
+	-ms-grid-row: 1;
+	-ms-grid-column: 2;
+	grid-area: body;
+	overflow-y: scroll;
+}
+f.album {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+	grid-area: album;
+	min-width: var(--album-deskwh);
+    height: var(--album-deskwh);
+    margin: 0;
+}
+.subs {
+	-ms-grid-row: 1;
+	-ms-grid-column: 3;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	grid-area: subs;
+}
+.parentdescription {
+	-ms-grid-row: 3;
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 3;
+	grid-area: desc;
+	margin-top: 0;
+}
+
+.filter-menu {
+	bottom: auto; right: auto; left: -162px; top: -140px
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width: 484px)">
     <title>Плейлист Web</title>
 <style>
 sub2::before {content: "7 Мая 2024"}
@@ -18,9 +19,9 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 		<div class="action one"></div>
 	</div>-->
     <f class="album"><img src="https://distribution.faceit-cdn.net/images/4cd37018-2119-4ad8-aeab-0dbfe3cfa7c5.jpeg" alt=""><blu/></f>
+    <div class="subs">
     <sub0>п*м б*м ПЕСЕНКИ</sub0>
     <sub1>лера</sub1>
-    <!--<sub2>Обновления:&nbsp;<span class="changes"></span></sub2>-->
     <sub2>&nbsp;г.</sub2>
     <div class="playing"><play>
 <label class="play-label"><span class="rated"></span>&nbsp;из&nbsp;<span class="all"></span>&nbsp;послушано<span class="ocenlnew new-indicator"></span></label>
@@ -32,16 +33,17 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <label class="isunli"><span class="ocenunli"></span>&nbsp;непрослушанных</label>
 <label class="islnew"><span class="ocenlnew"></span>&nbsp;обновление(я)</label></play>
 <div class="filter-menu">
-<input class="li" text="«Послушал»" name="filterbutt" type="radio">
 <input class="l5" text="«Любимое»" name="filterbutt" type="radio">
 <input class="l4" text="«Нравится»" name="filterbutt" type="radio">
 <input class="l3" text="«Так себе»" name="filterbutt" type="radio">
 <input class="l2" text="«Не нравится»" name="filterbutt" type="radio">
+<input class="li" text="«Послушал»" name="filterbutt" type="radio">
 <input class="linon btop" text="Непрослушанные" name="filterbutt" type="radio">
 <input class="lnew" text="Обновления" name="filterbutt" type="radio">
 <input class="alltracks btop" text="Все" name="filterbutt" type="radio" checked></div>
 </div>
-    <div><input style="display:none" type="checkbox" class="desc-more"/>
+</div>
+    <div class="parentdescription"><input style="display:none" type="checkbox" class="desc-more"/>
     <div class="description">На основе телеграмовских твоих упоминаний с февраля 2022. Состоит весь почти из того, чего не слышал до этого. Спасибо, что делишься :)</div></div></div>
     <div class="box body">
     
@@ -913,11 +915,12 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 <div class="ratee"><f><img src="LINKINHERE" alt=""></f>
 <song artist="ARTIST">TRACK</song>
 <comm><ent></ent></comm></div>
+
     <sub3><!--&nbsp;г.<br>-->Песен: <span class="all"></span>,&nbsp;</sub3>
 </div>
     <div class="box popa">popa</div>
 
-<!--<div class="redbox"><div class="hed">Обновлений:&nbsp;<span class="changes"></span></div><input type="checkbox"/></div>-->
+<!--<div class="redbox"><div class="hed">Обновлений:&nbsp;<span class="ocenlnew"></span></div><input type="checkbox"/></div>-->
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>
@@ -925,14 +928,13 @@ $(function(){
 $("body").each(function(indx, el){
 $(".rated",el).text($('div[class^="rate l"]',el).length)
 $(".all",el).text($('.rate',el).length)
-$(".changes",el).text($('.rate.n',el).length)
 $(".ocenli",el).text($('[class^="rate li"]',el).length)
 $(".ocenl5",el).text($('[class^="rate l5"]',el).length)
 $(".ocenl4",el).text($('[class^="rate l4"]',el).length)
 $(".ocenl3",el).text($('[class^="rate l3"]',el).length)
 $(".ocenl2",el).text($('[class^="rate l2"]',el).length)
 $(".ocenunli",el).text($('[class$="rate"]',el).length)
-$(".ocenlnew",el).text($('[class$=" n"]',el).length)
+$(".ocenlnew",el).text($('.rate.n',el).length)
 });});
 </script>
 </html>
