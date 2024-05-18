@@ -11,17 +11,14 @@
 --play-background-pressed: #ff7183;
 --filter-buttton-bg: #28282880;
 --filter-icons-invert: invert(1);
---description-color: #ffffffa3;
 --block-background: #232323;
 --block-hover: #a60012;
 --new: hsla(0,0%,100%,.64);
 --new-background: hsla(0,0%,100%,.06);
---artist: #ffffffa3;
 --comm-filter: invert(39%) sepia(96%) saturate(492%) hue-rotate(306deg) brightness(105%) contrast(96%);
 --ent-background: rgba(40,40,40,.7);
 --ent-border-top: hsla(0,0%,100%,.1);
 --ent-shadows: inset 0 0 0 1px var(--ent-border-top), 0 8px 40px rgba(0,0,0,.5);
---sub3-color: #ffffffa3;
 --popa-background: #2b2b2b;
 }
 @media (prefers-color-scheme: light) {
@@ -38,17 +35,14 @@
 --play-background-pressed: #b00;
 --filter-buttton-bg: #f5f5f57a;
 --filter-icons-invert: none;
---description-color: #0000008f;
 --block-background: rgba(0,0,0,.015);
 --block-hover: #d60017;
 --new: rgba(0,0,0,.56);
 --new-background: rgba(0,0,0,.06);
---artist: #0000008f;
 --comm-filter: invert(11%) sepia(76%) saturate(6460%) hue-rotate(348deg) brightness(89%) contrast(109%);
 --ent-background: rgba(246,246,246, .72);
 --ent-border-top: rgba(0,0,0,.15);
 --ent-shadows: inset 0 0 0 1px var(--ent-border-top), 0 8px 40px rgba(0,0,0,.25);
---sub3-color: #0000008f;
 --popa-background: #f2f2f2;
 }
 }
@@ -254,9 +248,9 @@ sub1 {
 	margin: -5px 0;
 	color: var(--sub2-color)
 }
-/*sub1:hover {
+sub1:hover {
 	text-decoration: underline
-}*/
+}
 sub2 {
 	-webkit-line-clamp: 1;
 	word-break: break-all;
@@ -313,7 +307,7 @@ play::before {
 	content: "";
 	width: 16px; min-width: 16px;
 	height: 12px;
-	margin: 0 2px 2px 0;
+	margin-right: 2px;
 	background: url(svg/play.svg);
 	background-size: auto 100% !important;
 	-webkit-filter: invert(1);
@@ -321,7 +315,6 @@ play::before {
 }
 .playing:has([class^="l"]:checked) play::before {
 	height: 16px;
-	margin: 0 2px 0 0;
 }
 .new-indicator {
 	display: none;
@@ -393,7 +386,7 @@ play::before {
     -webkit-box-orient: vertical;*/
     overflow: hidden;
     line-height: 1.38462;
-    color: var(--description-color);
+    color: var(--sub2-color);
 }
 input:checked + .description {
 	display: block;
@@ -464,7 +457,7 @@ song::after {
     overflow: hidden;
     -o-text-overflow: ellipsis;
        text-overflow: ellipsis;
-    color: var(--artist);
+    color: var(--sub2-color);
 }
 .rate:has(comm:hover) song, .rate:has(comm:hover) song::after {color: white}
 comm {
@@ -523,7 +516,7 @@ sub3 {
 	line-height: 1.38462;
 	display: block;
 	padding: 44px 0 0 12px;
-	color: var(--sub3-color);
+	color: var(--sub2-color);
 }
 .popa {
 	display: none;
@@ -591,7 +584,7 @@ play:hover + .filter-menu, .filter-menu:hover, body:has(.rate.n) .new-indicator 
 	display: none;
 	position: absolute;
 	overflow: hidden;
-	bottom: 31px; right: -2%; top: auto;
+	bottom: 23px; right: -5px; top: auto;
 	padding: 0;
 	margin: 0;
 	width: 185px;
