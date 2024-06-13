@@ -49,7 +49,7 @@
 
 play, .rate, song, song::after, comm {-webkit-transition: .2s;-o-transition: .2s;transition: .2s;}
 input {margin: 0; padding: 0; -webkit-appearance: none;-moz-appearance: none;appearance: none}
-.filter-menu input::after, .redbox input, .action::after, sub2::after, play::before, comm::after, f::before {
+.filter-button::after, .filter-menu input::after, .redbox input, .action::after, sub2::after, play::before, comm::after, f::before {
     background-repeat: no-repeat !important;
     background-position: 50% !important;
 }
@@ -74,15 +74,6 @@ input {margin: 0; padding: 0; -webkit-appearance: none;-moz-appearance: none;app
 	        box-shadow: 0 1px 2px rgba(0,0,0,.1);
 	z-index: 4;
 }
-/*input.filter {
-	display: inline-flex;
-	align-items: center;
-	font-weight: 500;
-	//padding: 0 12px;
-	color: var(--sub1-color);
-	//height: 28px;
-	//min-width: 64px;
-}*/
 
 
 
@@ -117,6 +108,9 @@ body {
 .box.body {
 	padding-top: 16px; /*16*/
 	padding-bottom: 43px;
+	padding: 4px;
+	margin: 12px 21px 39px;
+	border-radius: 8px;
 }
 
 /*.action {
@@ -255,6 +249,7 @@ sub2 {
 	-webkit-line-clamp: 1;
 	word-break: break-all;
 	font-size: 12px;
+	line-height: 1.25;
 	margin-top: 4px;
     color: var(--sub2-color)
 }
@@ -329,7 +324,7 @@ play::before {
 	height: 16px;
 	min-width: 16px;
 	padding: 1px 4px;
-	border-radius: 8px;
+	border-radius: 50%;
 	color: white;
 	background-color: black;
 	-webkit-filter: var(--filter-icons-invert);
@@ -338,8 +333,8 @@ play::before {
 /*УДАЛЕННАЯ КНОПКА ВОЗЛЕ ПЛЕЕРА*/
 /*.filter-button {
 	position: relative;
-	width: 28px;
-	height: 28px;
+	width: 30px;
+	height: 30px;
 	border-radius: 50%;
 	margin-left: 12px;
 	background-color: var(--filter-buttton-bg);
@@ -358,12 +353,11 @@ play::before {
 	display: block;
 	width: 100%;
 	height: 100%;
-    background-size: auto 100%;
-    background: url("svg/more.svg");
+    background-size: auto 100% !important;
+    background: url("svg/nonused/more.svg");
     -webkit-filter: var(--comm-filter);
             filter: var(--comm-filter);
-}
-*/
+}*/
 
 .parentdescription {
 	display: -webkit-box;
@@ -664,6 +658,7 @@ play [class^="is"] {display: none}
 }
 
 /*БЛОК С ВОЗДЕЙСТВИЕМ НА ЭЛЕМЕНТЫ ТРЕКОВ*/
+.box.head:has([class^="l"]:checked) + .box.body {background-color: var(--block-background)}
 .box.head:has([class^="l"]:checked) + .box.body .rate,
 .box.head:has([class^="l"]:checked) + .box.body sub3
 {display: none; background-color: transparent}
