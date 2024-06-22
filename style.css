@@ -4,6 +4,7 @@
 --action-background: hsla(0,0%,100%,.05);
 --cover-background: #323232;
 --cover-filter: opacity(.16) invert(96%) sepia(3%) saturate(540%) hue-rotate(201deg) brightness(99%) contrast(94%);
+--album-shadow: rgba(0,0,0,.3);
 --sub0-color: #ffffffeb;
 --sub1-color: #fa586a;
 --sub2-color: #ffffffa3;
@@ -28,6 +29,7 @@
 --action-background: rgba(0,0,0,.05);
 --cover-background: #ebebeb;
 --cover-filter: opacity(.18) invert(23%) sepia(11%) saturate(384%) hue-rotate(202deg) brightness(93%) contrast(93%);
+--album-shadow: rgba(0,0,0,.1);
 --sub0-color: #000000e0;
 --sub1-color: #d60017;
 --sub2-color: #0000008f;
@@ -135,18 +137,15 @@ img {
 	position: relative;
 	display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
     pointer-events: none;
     z-index: 1
 }
-/*.album img {
-	top: calc((270px - 270px)/-2)
-}*/
 f {
+	aspect-ratio: 1/1;
 	position: relative;
-    min-width: 40px;
     width: 40px;
-    height: 40px;
+    min-width: 40px;
     overflow: hidden;
     display: block;
     border-radius: inherit;
@@ -157,17 +156,18 @@ f::before {
 	position: absolute; left: 0; top: 0;
 	width: 100%;
 	height: 100%;
-	/*background: url(svg/loading.gif) no-repeat;
-	background-size: auto 40%;*/
-	opacity: .4
+}
+.rate f::before {
+	display: none;
+	background: url(svg/loading.gif) no-repeat;
+	background-size: auto 40%;
+	opacity: .4;
 }
 f.album::before {
-	display: none;
 	background: url(svg/music.svg) no-repeat;
 	background-size: auto 100%;
 	-webkit-filter: var(--cover-filter);
 	        filter: var(--cover-filter);
-	opacity: 1
 }
 f::after {
     content: "";
@@ -181,19 +181,16 @@ f::after {
 }
 .album {
 	overflow: visible;
-    min-width: 270px;
-    height: 270px;
+    width: 270px;
     margin: 15px auto 18px;
-    -webkit-box-shadow: 0 10px 20px 0 rgba(0,0,0,.1);
-            box-shadow: 0 10px 20px 0 rgba(0,0,0,.1);
+    border-radius: 10px;
+    -webkit-box-shadow: 0 10px 20px 0 var(--album-shadow);
+            box-shadow: 0 10px 20px 0 var(--album-shadow);
     z-index: 3
 }
 .album img {
 	position: absolute;
-	border-radius: inherit
-}
-.album, .album::after {
-	border-radius: 10px;
+	border-radius: inherit;
 }
 blu::after {
 	content: "";
@@ -209,7 +206,26 @@ blu::after {
 	        transform-origin: bottom center;
 	-webkit-filter: blur(20px) saturate(2);
 	        filter: blur(20px) saturate(2);
-	opacity: .3
+	opacity: .3;
+}
+
+blu::before { /* ЭМОДЗИ ВНИЗУ ОБЛОЖКИ, МАЛЕНЬКОЕ*/
+	content: "😼";
+	pointer-events: none;
+	display: block;
+	position: absolute;
+	top: calc(97% - 11.3%);
+	font-size: calc(270px * .113 / 1.18);
+	line-height: 1.18;
+	font-weight: 600;
+	text-align: center;
+	width: 100%;
+	height: 11.3%;
+	z-index: 2;
+	/*background: url(https://em-content.zobj.net/source/apple/391/cat-with-wry-smile_1f63c.png);*/
+	background-size: 100%;
+	background-position: 50%;
+	background-repeat: no-repeat;
 }
 
 .subs {
@@ -432,7 +448,7 @@ input.desc-more:checked {
 }
 .rate:nth-child(odd) {background-color: var(--block-background)}
 .rate:has(comm:hover) {background-color: var(--block-hover) !important}
-//.rate:has(comm:hover)/*, .rate.n*/ {background-color: var(--new-background)}
+//.rate:has(comm:hover)/*, .rate.n*/ {background-color: var(--new-background) !important}
 .rate f {
 	margin-right: 12px;
 }
