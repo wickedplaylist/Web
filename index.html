@@ -926,6 +926,20 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>
+var penis = document.querySelector(".album");
+function changeWidth() 
+{
+    var scrollVal = window.pageYOffset;
+    var minScale = 1 - 0.5; //Минимальный размер альбома (второе число) до 1
+    var pattern0 = (Math.min( Math.max(scrollVal, 270 * minScale), 305) - 270 * minScale) / (305 - 270 * minScale);
+    //Changing CSS Scale
+    penis.style.scale = 1 - Math.min(scrollVal, 270 * minScale) / (270 * minScale) * minScale;
+    penis.style.opacity = 1 - pattern0;
+    penis.style.top = 22 * pattern0 + "px";
+}
+window.addEventListener('scroll', function() {requestAnimationFrame(changeWidth);}, false);
+
+
 $(function(){
 $("body").each(function(indx, el){
 $(".rated",el).text($('div[class^="rate l"]',el).length)
