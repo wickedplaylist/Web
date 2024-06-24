@@ -49,7 +49,7 @@
 }
 }
 
-play, .rate, song, song::after, comm {-webkit-transition: .2s;-o-transition: .2s;transition: .2s;}
+.album, play, .rate, song, song::after, comm {-webkit-transition: .2s;-o-transition: .2s;transition: .2s}
 input {margin: 0; padding: 0; -webkit-appearance: none;-moz-appearance: none;appearance: none}
 .filter-button::after, .filter-menu input::after, .redbox input, .action::after, sub2::after, play::before, comm::after, f::before {
     background-repeat: no-repeat !important;
@@ -148,7 +148,7 @@ f {
     min-width: 40px;
     overflow: hidden;
     display: block;
-    border-radius: inherit;
+    border-radius: 5px;
     background-color: var(--cover-background);
 }
 f::before {
@@ -178,6 +178,22 @@ f::after {
             box-shadow: inset 0 0 0 1px hsla(0,0%,50%,.1);
     z-index: 1;
 }
+
+/*НОВАЯ АНИМАШКА, НУЖНО РАЗБРЕСТИ ПО ОСНОВНЫМ ОПИСЯМ*/
+.rate f:hover::after {
+	background-color: hsla(0,0%,100%,.45);
+	background-image: url(svg/music.svg);
+	background-size: auto 80%; /*40*/
+	background-position: 50%;
+	background-repeat: no-repeat;
+	-webkit-filter: invert(1);
+	        filter: invert(1);
+}
+.rate:has(f:hover) {margin-left: 54px}
+.rate {-webkit-transition: .2s, margin-left .5s;-o-transition: .2s, margin-left .5s;transition: .2s, margin-left .5s}
+.box.body {overflow: hidden}
+
+
 .album {
 	z-index: 3;
 	overflow: visible;
@@ -189,10 +205,8 @@ f::after {
     -webkit-transform-origin: bottom center;
         -ms-transform-origin: bottom center;
             transform-origin: bottom center;
-	-webkit-transition: .1s;
-	-o-transition: .1s;
-	transition: .1s;
 }
+//.box.head {background: -o-linear-gradient(top, red 170px, green 0, green 305px, transparent 0);background: linear-gradient(to bottom, red 170px, green 0, green 305px, transparent 0)}
 .album img {
 	position: absolute;
 	border-radius: inherit;
@@ -263,7 +277,7 @@ sub1 {
 	margin: -5px 0;
 	color: var(--sub2-color)
 }
-sub1:hover {
+sub1:hover, song:hover::after {
 	text-decoration: underline
 }
 sub2 {
@@ -308,9 +322,6 @@ play {
 	border-radius: 6px;
 	color: white;
 	background-color: #d60017;
-	-webkit-transition: background-color .2s;
-	-o-transition: background-color .2s;
-	transition: background-color .2s;
 }
 play label {
 	-webkit-line-clamp: 1;
@@ -452,8 +463,8 @@ input.desc-more:checked {
     background-color: var(--new);
 }
 .rate:nth-child(odd) {background-color: var(--block-background)}
+.rate:hover {background-color: var(--new-background) !important}
 .rate:has(comm:hover) {background-color: var(--block-hover) !important}
-//.rate:has(comm:hover)/*, .rate.n*/ {background-color: var(--new-background) !important}
 .rate f {
 	margin-right: 12px;
 }

@@ -926,6 +926,7 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>
+window.addEventListener('scroll', function() {requestAnimationFrame(changeWidth);}, false);
 var penis = document.querySelector(".album");
 function changeWidth() 
 {
@@ -937,8 +938,6 @@ function changeWidth()
     penis.style.opacity = 1 - pattern0;
     penis.style.top = 22 * pattern0 + "px";
 }
-window.addEventListener('scroll', function() {requestAnimationFrame(changeWidth);}, false);
-
 
 $(function(){
 $("body").each(function(indx, el){
