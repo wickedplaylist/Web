@@ -931,7 +931,7 @@ var penis = document.querySelector(".album");
 function changeWidth() 
 {
     var scrollVal = window.pageYOffset;
-    var minScale = 1 - 0.5; //Минимальный размер альбома (второе число) до 1
+    var minScale = 1 - 0.49; //Минимальный размер альбома (второе число) до 1
     var pattern0 = (Math.min( Math.max(scrollVal, 270 * minScale), 305) - 270 * minScale) / (305 - 270 * minScale);
     //Changing CSS Scale
     penis.style.scale = 1 - Math.min(scrollVal, 270 * minScale) / (270 * minScale) * minScale;

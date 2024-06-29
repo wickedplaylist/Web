@@ -9,6 +9,7 @@
 --sub1-color: #fa586a;
 --sub2-color: #ffffffa3;
 --exclipt-filter: invert(1) opacity(.64);
+--play-background: #ffffff0d;
 --play-background-pressed: #ff7183;
 --filter-buttton-bg: #28282880;
 --filter-icons-invert: invert(1);
@@ -34,6 +35,7 @@
 --sub1-color: #d60017;
 --sub2-color: #0000008f;
 --exclipt-filter: opacity(.56);
+--play-background: #0000000d;
 --play-background-pressed: #b00;
 --filter-buttton-bg: #f5f5f57a;
 --filter-icons-invert: none;
@@ -183,7 +185,7 @@ f::after {
 .rate f:hover::after {
 	background-color: hsla(0,0%,100%,.45);
 	background-image: url(svg/music.svg);
-	background-size: auto 80%; /*40*/
+	background-size: auto 32px; /*40% 16px*/
 	background-position: 50%;
 	background-repeat: no-repeat;
 	-webkit-filter: invert(1);
@@ -191,7 +193,6 @@ f::after {
 }
 .rate:has(f:hover) {margin-left: 54px}
 .rate {-webkit-transition: .2s, margin-left .5s;-o-transition: .2s, margin-left .5s;transition: .2s, margin-left .5s}
-.box.body {overflow: hidden}
 
 
 .album {
@@ -229,7 +230,7 @@ blu::after {
 }
 
 blu::before { /* ЭМОДЗИ ВНИЗУ ОБЛОЖКИ, МАЛЕНЬКОЕ*/
-	content: "😼";
+	content: "";
 	pointer-events: none;
 	display: block;
 	position: absolute;
@@ -241,8 +242,8 @@ blu::before { /* ЭМОДЗИ ВНИЗУ ОБЛОЖКИ, МАЛЕНЬКОЕ*/
 	width: 100%;
 	height: 11.3%;
 	z-index: 1;
-	/*background: url();*/
-	background-size: auto 100%;
+	background-image: url(https://tlgrm.ru/_/stickers/d21/e99/d21e9940-fc86-49ba-9d91-b20a71136040/8.webp);
+	background-size: auto 148%;
 	background-position: 50%;
 	background-repeat: no-repeat;
 }
@@ -322,12 +323,15 @@ play {
 	border-radius: 6px;
 	color: white;
 	background-color: #d60017;
+	color: var(--sub1-color);
+	background-color: var(--play-background);
 }
 play label {
 	-webkit-line-clamp: 1;
 	word-break: break-all;
 }
 play:hover, play:has(+ .filter-menu:hover) {
+	color: white;
 	background-color: var(--play-background-pressed);
 }
 play::before {
@@ -337,8 +341,12 @@ play::before {
 	margin-right: 2px;
 	background: url(svg/play.svg);
 	background-size: auto 100% !important;
+	-webkit-filter: var(--comm-filter);
+	        filter: var(--comm-filter);
+}
+play:hover::before, play:has(+ .filter-menu:hover)::before {
 	-webkit-filter: invert(1);
-	        filter: invert(1)
+	        filter: invert(1);
 }
 .playing:has([class^="l"]:checked) play::before {
 	height: 16px;
