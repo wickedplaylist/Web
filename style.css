@@ -332,7 +332,11 @@ play label {
 }
 play:hover, play:has(+ .filter-menu:hover) {
 	color: white;
-	background-color: var(--play-background-pressed);
+	background-color: var(--play-background-pressed) !important;
+}
+play:has(+ .filter-menu [class^="l"]:checked) {
+	color: white;
+	background-color: #d60017;
 }
 play::before {
 	content: "";
@@ -344,7 +348,7 @@ play::before {
 	-webkit-filter: var(--comm-filter);
 	        filter: var(--comm-filter);
 }
-play:hover::before, play:has(+ .filter-menu:hover)::before {
+play:hover::before, play:has(+ .filter-menu:hover)::before, play:has(+ .filter-menu [class^="l"]:checked)::before {
 	-webkit-filter: invert(1);
 	        filter: invert(1);
 }
