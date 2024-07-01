@@ -1,30 +1,4 @@
 :root {
---background: #1f1f1f;
---header-bg: #2e2e2e;
---action-background: hsla(0,0%,100%,.05);
---cover-background: #323232;
---cover-filter: opacity(.16) invert(96%) sepia(3%) saturate(540%) hue-rotate(201deg) brightness(99%) contrast(94%);
---album-shadow: rgba(0,0,0,.3);
---sub0-color: #ffffffeb;
---sub1-color: #fa586a;
---sub2-color: #ffffffa3;
---exclipt-filter: invert(1) opacity(.64);
---play-background: #ffffff0d;
---play-background-pressed: #ff7183;
---filter-buttton-bg: #28282880;
---filter-icons-invert: invert(1);
---block-background: #232323;
---block-hover: #a60012;
---new: hsla(0,0%,100%,.64);
---new-background: hsla(0,0%,100%,.06);
---comm-filter: invert(39%) sepia(96%) saturate(492%) hue-rotate(306deg) brightness(105%) contrast(96%);
---ent-background: rgba(40,40,40,.7);
---ent-border-top: hsla(0,0%,100%,.1);
---ent-shadows: inset 0 0 0 1px var(--ent-border-top), 0 8px 40px rgba(0,0,0,.5);
---popa-background: #2b2b2b;
-}
-@media (prefers-color-scheme: light) {
-:root {
 --background: white;
 --header-bg: white;
 --action-background: rgba(0,0,0,.05);
@@ -48,6 +22,32 @@
 --ent-border-top: rgba(0,0,0,.15);
 --ent-shadows: inset 0 0 0 1px var(--ent-border-top), 0 8px 40px rgba(0,0,0,.25);
 --popa-background: #f2f2f2;
+}
+@media (prefers-color-scheme: dark) {
+:root {
+--background: #1f1f1f;
+--header-bg: #2e2e2e;
+--action-background: hsla(0,0%,100%,.05);
+--cover-background: #323232;
+--cover-filter: opacity(.16) invert(96%) sepia(3%) saturate(540%) hue-rotate(201deg) brightness(99%) contrast(94%);
+--album-shadow: rgba(0,0,0,.3);
+--sub0-color: #ffffffeb;
+--sub1-color: #fa586a;
+--sub2-color: #ffffffa3;
+--exclipt-filter: invert(1) opacity(.64);
+--play-background: #ffffff0d;
+--play-background-pressed: #ff7183;
+--filter-buttton-bg: #28282880;
+--filter-icons-invert: invert(1);
+--block-background: #232323;
+--block-hover: #a60012;
+--new: hsla(0,0%,100%,.64);
+--new-background: hsla(0,0%,100%,.06);
+--comm-filter: invert(39%) sepia(96%) saturate(492%) hue-rotate(306deg) brightness(105%) contrast(96%);
+--ent-background: rgba(40,40,40,.7);
+--ent-border-top: hsla(0,0%,100%,.1);
+--ent-shadows: inset 0 0 0 1px var(--ent-border-top), 0 8px 40px rgba(0,0,0,.5);
+--popa-background: #2b2b2b;
 }
 }
 

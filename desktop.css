@@ -1,11 +1,11 @@
 :root {
---wideboxheadbg: rgba(235,235,245,.03);
+--wideboxheadbg: rgba(60,60,67,.03);
 
 --album-deskwh: 192px;
 }
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
 :root {
---wideboxheadbg: rgba(60,60,67,.03);
+--wideboxheadbg: rgba(235,235,245,.03);
 }
 }
 
