@@ -191,8 +191,8 @@ f::after {
 	-webkit-filter: invert(1);
 	        filter: invert(1);
 }
-.rate:has(f:hover) {margin-left: 54px}
-.rate {-webkit-transition: .2s, margin-left .5s;-o-transition: .2s, margin-left .5s;transition: .2s, margin-left .5s}
+.rate:has(f:hover) {padding-left: 54px}
+.rate {-webkit-transition: .2s, padding-left .5s;-o-transition: .2s, padding-left .5s;transition: .2s, padding-left .5s}
 
 
 .album {
@@ -499,12 +499,13 @@ song::after {
 }
 .rate:has(comm:hover) song, .rate:has(comm:hover) song::after {color: white}
 comm {
+	display: none;
 	width: 21px; min-width: 21px;
 	height: 21px;
     margin-left: auto;
     border-radius: 50%;
 }
-comm:has(ent) {background-color: hsla(0,0%,50%,.3)}
+[class^="rate l"] comm {display: block; background-color: hsla(0,0%,50%,.3)}
 comm:has(ent:empty), comm:hover {background-color: transparent}
 comm::after, .filter-menu input::after {
 	content: "";
@@ -541,15 +542,14 @@ ent, .filter-menu {
 comm:hover ent {
 	display: block;
 }
-ent::afterr {
-	content: "Copy!";
-	display: block;
-	background-color: #ffffff50;
-}
 ent img {
 	border-radius: inherit;
 	margin: 2px 0
 }
+d {
+	display: none;
+}
+
 sub3 {
 	line-height: 1.38462;
 	display: block;
