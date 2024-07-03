@@ -547,7 +547,12 @@ ent img {
 	margin: 2px 0
 }
 d {
-	display: none;
+	display: block;
+	font-size: 11px;
+	line-height: 1.2727272727;
+	font-style: italic;
+	text-align: start;
+	opacity: .27;
 }
 
 sub3 {
