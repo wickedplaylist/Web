@@ -207,7 +207,7 @@ f::after {
         -ms-transform-origin: bottom center;
             transform-origin: bottom center;
 }
-//.box.head {background: -o-linear-gradient(top, red 170px, green 0, green 305px, transparent 0);background: linear-gradient(to bottom, red 170px, green 0, green 305px, transparent 0)}
+/*.box.head {background: -o-linear-gradient(top, red 170px, green 0, green 305px, transparent 0);background: linear-gradient(to bottom, red 170px, green 0, green 305px, transparent 0)}*/
 .album img {
 	position: absolute;
 	border-radius: inherit;
@@ -229,8 +229,9 @@ blu::after {
 	opacity: .3;
 }
 
-blu::before { /* ЭМОДЗИ ВНИЗУ ОБЛОЖКИ, МАЛЕНЬКОЕ*/
-	content: "";
+/* ЭМОДЗИ ВНИЗУ ОБЛОЖКИ, МАЛЕНЬКОЕ*/
+/*blu::before {
+	content: "👀";
 	pointer-events: none;
 	display: block;
 	position: absolute;
@@ -242,11 +243,11 @@ blu::before { /* ЭМОДЗИ ВНИЗУ ОБЛОЖКИ, МАЛЕНЬКОЕ*/
 	width: 100%;
 	height: 11.3%;
 	z-index: 1;
-	background-image: url(https://tlgrm.ru/_/stickers/d21/e99/d21e9940-fc86-49ba-9d91-b20a71136040/8.webp);
+	//background-image: url(https://tlgrm.ru/_/stickers/d21/e99/d21e9940-fc86-49ba-9d91-b20a71136040/8.webp);
 	background-size: auto 148%;
 	background-position: 50%;
 	background-repeat: no-repeat;
-}
+}*/
 
 .subs {
 	display: -webkit-box;
