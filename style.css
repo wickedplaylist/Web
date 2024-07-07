@@ -529,7 +529,7 @@ comm:hover::after {-webkit-filter: invert(1);filter: invert(1)}
 ent, .filter-menu {
     display: none;
 	position: absolute;
-	right: 4px; top: 66%;
+	right: 4px; top: 37px;
 	max-width: 250px;
 	padding: 8px 10px;
 	border-radius: 6px;
@@ -628,7 +628,7 @@ play:hover + .filter-menu, .filter-menu:hover, body:has(.rate.n) .new-indicator 
 	display: none;
 	position: absolute;
 	overflow: hidden;
-	bottom: 23px; right: -5px; top: auto;
+	bottom: 32px; right: -5px; top: auto;
 	padding: 0;
 	margin: 0;
 	width: 185px;

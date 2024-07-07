@@ -931,10 +931,25 @@ blu::after{background:url(https://distribution.faceit-cdn.net/images/4cd37018-21
 </div>
     <div class="box popa">popa</div>
 
+<button style="display:none" class="scrolle" onclick="scrollToBottom()">Пролистать вниз</button>
+<button style="display:none" class="scrolle up" onclick="scrollToTop()">Пролистать вверх</button>
 <!--<div class="redbox"><div class="hed">Обновлений:&nbsp;<span class="ocenlnew"></span></div><input type="checkbox"/></div>-->
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script>
+$(function(){
+$("body").each(function(indx, el){
+$(".rated",el).text($('div[class^="rate l"]',el).length)
+$(".all",el).text($('.rate',el).length)
+$(".ocenli",el).text($('[class^="rate li"]',el).length)
+$(".ocenl5",el).text($('[class^="rate l5"]',el).length)
+$(".ocenl4",el).text($('[class^="rate l4"]',el).length)
+$(".ocenl3",el).text($('[class^="rate l3"]',el).length)
+$(".ocenl2",el).text($('[class^="rate l2"]',el).length)
+$(".ocenunli",el).text($('[class$="rate"]',el).length)
+$(".ocenlnew",el).text($('.rate.n',el).length)
+});});
+
 window.addEventListener('scroll', function() {requestAnimationFrame(changeWidth);}, false);
 var penis = document.querySelector(".album");
 function changeWidth() 
@@ -948,17 +963,26 @@ function changeWidth()
     penis.style.top = 22 * pattern0 + "px";
 }
 
-$(function(){
-$("body").each(function(indx, el){
-$(".rated",el).text($('div[class^="rate l"]',el).length)
-$(".all",el).text($('.rate',el).length)
-$(".ocenli",el).text($('[class^="rate li"]',el).length)
-$(".ocenl5",el).text($('[class^="rate l5"]',el).length)
-$(".ocenl4",el).text($('[class^="rate l4"]',el).length)
-$(".ocenl3",el).text($('[class^="rate l3"]',el).length)
-$(".ocenl2",el).text($('[class^="rate l2"]',el).length)
-$(".ocenunli",el).text($('[class$="rate"]',el).length)
-$(".ocenlnew",el).text($('.rate.n',el).length)
-});});
+const scrollingElement = (document.scrollingElement || document.body);
+const scrollToBottom = () => {scrollingElement.scrollTop = scrollingElement.scrollHeight}
+const scrollToTop = () => {scrollingElement.scrollTop = 0}
+//const scrollSmoothToBottom = () => {$(scrollingElement).animate({scrollTop: document.body.scrollHeight,}, 1000)}
+//const scrollSmoothToTop = () => {$(scrollingElement).animate({scrollTop: 0,}, 778)}
+
+var lastScrollTop = 0;
+$(window).scroll(function() {
+    var scrollTop = $(this).scrollTop();
+    if (scrollTop >= 450 && scrollTop <= 11209 && scrollTop > lastScrollTop) {
+        $('.scrolle').addClass('show');
+    } else {
+        $('.scrolle').removeClass('show');
+    }
+    if (scrollTop > 1060 && scrollTop < lastScrollTop) {
+        $('.scrolle.up').addClass('show');
+    } else {
+        $('.scrolle.up').removeClass('show');
+    }
+    lastScrollTop = scrollTop;
+});
 </script>
 </html>
