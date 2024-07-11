@@ -231,7 +231,6 @@ blu::after {
 
 /* ЭМОДЗИ ВНИЗУ ОБЛОЖКИ, МАЛЕНЬКОЕ*/
 blu::before {
-	content: "🥛";
 	pointer-events: none;
 	display: block;
 	position: absolute;
