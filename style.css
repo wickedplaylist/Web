@@ -51,7 +51,7 @@
 }
 }
 
-.album, play, .rate, song, song::after, comm {-webkit-transition: .2s;-o-transition: .2s;transition: .2s}
+.album, play, song, art, comm {-webkit-transition: .2s;-o-transition: .2s;transition: .2s}
 input {margin: 0; padding: 0; -webkit-appearance: none;-moz-appearance: none;appearance: none}
 .filter-button::after, .filter-menu input::after, .redbox input, .action::after, sub2::after, play::before, comm::after, f::before {
     background-repeat: no-repeat !important;
@@ -242,7 +242,7 @@ blu::before {
 	width: 100%;
 	height: 11.3%;
 	z-index: 1;
-	//background-image: url(https://tlgrm.ru/_/stickers/d21/e99/d21e9940-fc86-49ba-9d91-b20a71136040/8.webp);
+/*	background-image: url(https://tlgrm.ru/_/stickers/d21/e99/d21e9940-fc86-49ba-9d91-b20a71136040/8.webp);*/
 	background-size: auto 148%;
 	background-position: 50%;
 	background-repeat: no-repeat;
@@ -480,24 +480,16 @@ input.desc-more:checked {
 .rate f {
 	margin-right: 12px;
 }
-song {
+song, art {
     display: block;
     white-space: nowrap;
     overflow: hidden;
     -o-text-overflow: ellipsis;
        text-overflow: ellipsis;
-    margin-right: 7px;
 }
-song::after {
-    content: attr(artist);
-    display: block;
-    white-space: nowrap;
-    overflow: hidden;
-    -o-text-overflow: ellipsis;
-       text-overflow: ellipsis;
-    color: var(--sub2-color);
-}
-.rate:has(comm:hover) song, .rate:has(comm:hover) song::after {color: white}
+song {margin-right: 7px}
+art {color: var(--sub2-color)}
+.rate:has(comm:hover) song, .rate:has(comm:hover) art {color: white}
 comm {
 	display: none;
 	width: 21px; min-width: 21px;
