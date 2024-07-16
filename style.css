@@ -182,16 +182,17 @@ f::after {
 }
 
 /*НОВАЯ АНИМАШКА, НУЖНО РАЗБРЕСТИ ПО ОСНОВНЫМ ОПИСЯМ*/
-.rate f:hover::after {
+/*.rate fg:hover::after {
 	background-color: hsla(0,0%,100%,.45);
 	background-image: url(svg/music.svg);
-	background-size: auto 32px; /*40% 16px*/
+	background-size: auto 32px;
+                        //40% 16px
 	background-position: 50%;
 	background-repeat: no-repeat;
 	-webkit-filter: invert(1);
 	        filter: invert(1);
 }
-.rate:has(f:hover) {padding-left: 54px}
+.rate:has(f:hover) {padding-left: 54px}*/
 .rate {-webkit-transition: .2s, padding-left .5s;-o-transition: .2s, padding-left .5s;transition: .2s, padding-left .5s}
 
 
@@ -536,7 +537,7 @@ comm:hover ent {
 }
 ent img {
 	border-radius: inherit;
-	margin: 2px 0
+	margin: 2px 0;
 }
 d {
 	display: block;
