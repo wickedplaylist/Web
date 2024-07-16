@@ -278,7 +278,7 @@ sub1 {
 	margin: -5px 0;
 	color: var(--sub2-color)
 }
-sub1:hover, song:hover::after {
+sub1:hover, art:hover {
 	text-decoration: underline
 }
 sub2 {
