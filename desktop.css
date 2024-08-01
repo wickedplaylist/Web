@@ -16,7 +16,7 @@ body {
 	grid-template-columns: 440px auto;
 	-ms-grid-rows: 100dvh;
 	grid-template-rows: 100dvh;
-	                grid-template-areas: "head body";
+	                    grid-template-areas: "head body";
 }
 .box.head {
 	-ms-grid-row: 1;
@@ -30,7 +30,7 @@ body {
 	grid-template-columns: var(--album-deskwh) auto;
 	-ms-grid-rows: var(--album-deskwh) 8px auto;
 	grid-template-rows: var(--album-deskwh) auto;
-	                grid-template-areas:
+	                    grid-template-areas:
 	"album subs"
 	"desc desc";
 	padding-bottom: 20px;
