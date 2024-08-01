@@ -517,7 +517,7 @@ comm:hover::after {-webkit-filter: invert(1);filter: invert(1)}
 .rate.l3 comm::after, .filter-menu .l3::after, .playing:has(.l3:checked) play::before {background: url("svg/smiley.svg")}
 .rate.l2 comm::after, .filter-menu .l2::after, .playing:has(.l2:checked) play::before {background: url("svg/hand.thumbsdown.svg")}
 
-.ratee, div[class$="rate"] comm, ent:empty {display: none !important}
+.ratee, div[class$="rate"] comm, ent:empty, .lincom {display: none !important}
 ent, .filter-menu {
     display: none;
 	position: absolute;
@@ -669,6 +669,7 @@ play:hover + .filter-menu, .filter-menu:hover, body:has(.rate.n) .new-indicator 
             filter: var(--comm-filter);
 }
 .filter-menu .linon::after, .playing:has(.linon:checked) play::before {background: url("svg/play.slash.fill.svg")}
+.filter-menu .lincom::after, .playing:has(.lincom:checked) play::before {background: url("svg/nonUsed/comment-close-svgrepo-com.svg")}
 .filter-menu .lnew::after, .playing:has(.lnew:checked) play::before {
 	width: 6px; min-width: 6px;
     height: 6px;
@@ -687,6 +688,7 @@ body:has(.rate.n) input.lnew {display: -webkit-box;display: -ms-flexbox;display:
 /*БЛОК С ВОЗДЕЙСТВИЕМ НА play*/
 play [class^="is"] {display: none}
 .playing:has([class^="l"]:checked) .play-label {display: none}
+.playing:has(.lincom:checked) .isuncom,
 .playing:has(.li:checked) .isli,
 .playing:has(.l5:checked) .isl5,
 .playing:has(.l4:checked) .isl4,
@@ -709,6 +711,7 @@ play [class^="is"] {display: none}
 .box.head:has(.l3:checked) + .box.body .rate.l3,
 .box.head:has(.l2:checked) + .box.body .rate.l2,
 .box.head:has(.li:checked) + .box.body .rate.li,
+.box.head:has(.lincom:checked) + .box.body [class^="rate l"]:has(ent:empty),
 .box.head:has(.linon:checked) + .box.body [class$="rate"],
 .box.head:has(.lnew:checked) + .box.body .rate.n
 {
