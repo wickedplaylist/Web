@@ -606,6 +606,8 @@ sub3 {
 	margin: 10px;
 	background: url(svg/close.svg);
 	background-size: 100%;
+	-webkit-filter: invert(1);
+	        filter: invert(1);
 }
 .redbox:has(input:checked) {
 	display: none !important;
@@ -669,7 +671,7 @@ play:hover + .filter-menu, .filter-menu:hover, body:has(.rate.n) .new-indicator 
             filter: var(--comm-filter);
 }
 .filter-menu .linon::after, .playing:has(.linon:checked) play::before {background: url("svg/play.slash.fill.svg")}
-.filter-menu .lincom::after, .playing:has(.lincom:checked) play::before {background: url("svg/nonUsed/comment-close-svgrepo-com.svg")}
+.filter-menu .lincom::after, .playing:has(.lincom:checked) play::before {background: url("svg/close.svg");background-size: auto 70% !important}
 .filter-menu .lnew::after, .playing:has(.lnew:checked) play::before {
 	width: 6px; min-width: 6px;
     height: 6px;
