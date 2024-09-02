@@ -21,6 +21,10 @@
 --ent-background: rgba(246,246,246, .72);
 --ent-border-top: rgba(0,0,0,.15);
 --ent-shadows: inset 0 0 0 1px var(--ent-border-top), 0 8px 40px rgba(0,0,0,.25);
+--quote: #368AD1;
+--quote-my: #C7508B;
+--quote-bg: #368AD129;
+--quote-my-bg: #C7508B29;
 --popa-background: #f2f2f2;
 }
 @media (prefers-color-scheme: dark) {
@@ -47,6 +51,10 @@
 --ent-background: rgba(40,40,40,.7);
 --ent-border-top: hsla(0,0%,100%,.1);
 --ent-shadows: inset 0 0 0 1px var(--ent-border-top), 0 8px 40px rgba(0,0,0,.5);
+--quote: #5CADEA;
+--quote-my: #E8749A;
+--quote-bg: #5CADEA29;
+--quote-my-bg: #E8749A29;
 --popa-background: #2b2b2b;
 }
 }
@@ -521,6 +529,7 @@ comm:hover::after {-webkit-filter: invert(1);filter: invert(1)}
 ent, .filter-menu {
     display: none;
 	position: absolute;
+	word-wrap: break-word;
 	right: 4px; top: 37px;
 	max-width: 250px;
 	padding: 8px 10px;
@@ -547,6 +556,36 @@ d {
 	text-align: start;
 	opacity: .22;
 }
+q {
+	display: block;
+	position: relative;
+	margin-bottom: 1px;
+	padding: 2px 4px;
+	border-radius: inherit;
+	border-left: 3px solid;
+	border-left-color: var(--quote);
+	background-color: var(--quote-bg);
+}
+q.my {
+	border-left-color: var(--quote-my);
+	background-color: var(--quote-my-bg);
+}
+q::before {
+	content: attr(d);
+	display: block;
+	font-size: 11px;
+	margin-right: 10px;
+}
+q::after {
+	content: "”";
+	font-size: 18px;
+	position: absolute;
+	top: 3px; right: 4px;
+}
+q::before, q::after {color: var(--quote)}
+q.my::before, q.my::after {color: var(--quote-my)}
+q + q {margin-top: 3px}
+
 
 sub3 {
 	line-height: 1.38462;
