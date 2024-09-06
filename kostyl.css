@@ -45,6 +45,3 @@ img {margin: 0; padding: 0}
 	color: #5d5f61;
 	position: absolute; right: 0; top: 3px;
 }
-img {
-	pointer-events: none;
-}
