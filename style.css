@@ -561,7 +561,7 @@ d {
 q {
 	display: block;
 	position: relative;
-	margin-bottom: 1px;
+	margin: 4px 0 2px;
 	padding: 2px 4px;
 	border-radius: inherit;
 	border-left: 3px solid;
@@ -586,7 +586,7 @@ q::after {
 }
 q::before, q::after {color: var(--quote)}
 q.my::before, q.my::after {color: var(--quote-my)}
-q + q {margin-top: 3px}
+//q + q {margin-top: 3px}
 
 
 sub3 {
